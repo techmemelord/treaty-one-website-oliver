@@ -1,14 +1,24 @@
 <!--
-Name: Oliver Amisano
-Course: Web Devlopment II
-Teacher: Mr. Hardman
-School: Pembina Trails Collegiate (PTC)
-Date Last Modified: March 5, 2025
+  Name: Oliver Amisano
+  Course: Web Devlopment II
+  Teacher: Mr. Hardman
+  School: Pembina Trails Collegiate (PTC)
+  Date Last Modified: March 5, 2025
 -->
 
 <!doctype html>
 <html lang="en">
   <head>
+    <style>
+      #figure-one {
+        width: 40%;
+        height: 40%;
+      }
+      #figure-two {
+        width: 25%;
+        height: 25%;
+      }
+    </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesheets/style.css" />
@@ -27,19 +37,21 @@ Date Last Modified: March 5, 2025
       <section>
         <h2>
           Welcome to the website of
-          <span class="treaty-one-text">Treaty One</span>
+          <!--
+            All of these span tags that are in the class of treaty-one-text
+            will be labeled as such within all the text that says
+            Treaty One and have their style from their external stylesheet applied to it
+          -->
+          <span class="treaty-one-text">Treaty 1</span>
         </h2>
-      </section>
-      <section>
         <figure>
           <img
             id="figure-one"
-            src="images/signing-location.webp"
+            src="images/signing-location.jpg"
             alt="Picture of the location where Treaty 1 was signed" />
           <figcaption>
-            Fig. 1 - Picture of
-            <span class="treaty-one-text">Treaty 1</span> being signed in "stone
-            fort"
+            Fig. 1 - Picture of Treaty 1 being signed in &#8243;stone
+            fort&#8243;
           </figcaption>
         </figure>
       </section>
@@ -47,13 +59,31 @@ Date Last Modified: March 5, 2025
         <h2>What is <span class="treaty-one-text">Treaty 1</span>?</h2>
         <p>
           <span class="treaty-one-text">Treaty 1</span> was the first numbered
-          treaty that was signed in Canada in 1871 as an agreement for them to
-          share the land with First Nations people and give them special
+          treaty that was signed in Canada on August 3, 1871 as an agreement for
+          them to share the land with First Nations people and give them special
           benefits. This laid the groundwork for all of the rest of the numbered
-          treaties in Canada. This treaty was signed in the "stone fort" which
-          is Lower Fort Garry in modern-day Manitoba. This is the treaty that I,
-          the person making this website, resides on and also all the people
-          living in Winnipeg.
+          treaties in Canada. This treaty was signed in the
+          <!--
+            All of these span tags that are in the class of important-text
+            classify these parts of texts to appear as important and apply
+            the style from the external stylesheet
+          -->
+          <span class="important-text">&#8243;stone fort&#8243;</span> which is
+          <span class="important-text">Lower Fort Garry</span> in modern-day
+          Manitoba. This is the treaty that I, the person making this website,
+          resides on and also all the people living in Winnipeg.
+        </p>
+      </section>
+      <section>
+        <h3>What is a Treaty?</h3>
+        <p>
+          A treaty was a written agreement between two Nations that was approved
+          and signed by both of their leaders. In this case, a numbered treaty
+          in Canada would be an agreement between a group of First Nations
+          people or communties and Canada over a part of land. In exchange,
+          These First Nations people will have land reserved for them which is
+          called
+          <span class="important-text">&#8243;reserve land&#8243;</span>
         </p>
       </section>
       <section>
@@ -61,29 +91,41 @@ Date Last Modified: March 5, 2025
           Below is a map of all the land that was signed under
           <span class="treaty-one-text">Treaty 1</span>:
         </h3>
-      </section>
-      <section>
         <figure>
           <img
             id="figure-two"
             src="images/treaty-map.webp"
             alt="Map of Manitoba with various parts of land highlighted as being part of different numbered treaties" />
           <figcaption>
-            Fig. 2 - Picture of the territory signed in
-            <span class="treaty-one-text">Treaty 1</span> and other numbered
-            treaties
+            Fig. 2 - Picture of the territory signed in Treaty 1 and other
+            numbered treaties
           </figcaption>
         </figure>
-      </section>
-      <section>
         <p>
           All of the land in this map of Manitoba that is highlighted in light
           blue is all part of <span class="treaty-one-text">Treaty 1</span>.
-          Various communties benefit from being part of
-          <span class="treaty-one-text">Treaty 1</span> territory and also
-          acknowledge we are on
+          Various communties that can urban or First Nations that benefit from
+          being part of <span class="treaty-one-text">Treaty 1</span> territory
+          and also acknowledge we are on
           <span class="treaty-one-text">Treaty 1</span> land.
         </p>
+      </section>
+      <section>
+        <h3>What Makes this Treaty Unique from Others?</h3>
+        <p>
+          What makes this Treaty different from other Treaties in Canada is that
+          it was the
+          <span class="important-text">first Numbered Treaty</span> signed in
+          Canada. This became the foundation to all the other treaties being
+          signed and helped Canada to learn and know how to agree with the First
+          Nations people that were living on that land thousands of years before
+          they came. They also established their sovereignty of certain parts of
+          Canada that would have been taken over by other countries if those
+          Treaties haven&#39;t been signed at all.
+        </p>
+      </section>
+      <section>
+        <h2>Conclusion</h2>
         <p>
           That concludes a basic summary of what
           <span class="treaty-one-text">Treaty 1</span> is and if you want to
@@ -95,7 +137,12 @@ Date Last Modified: March 5, 2025
       </section>
     </main>
     <footer>
-      <a href="#" id="back-to-top">Back to top</a>
+      <a
+        href="#"
+        id="back-to-top"
+        aria-label="Link to go back to the top of the website"
+        >Back to top</a
+      >
     </footer>
   </body>
 </html>
