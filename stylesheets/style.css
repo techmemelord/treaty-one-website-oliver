@@ -1,3 +1,6 @@
+* {
+  line-height: 140%;
+}
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
@@ -5,13 +8,7 @@ html {
 
 body {
   font-family: "Cambria", Georgia, Serif;
-  background-color: #00e846;
-  font-size: 1.6rem;
-}
-* {
-  line-height: 140%;
-}
-p {
+  background-color: #ededed;
   font-size: 1.6rem;
 }
 
@@ -20,7 +17,7 @@ h3 {
 }
 nav {
   display: block;
-  background-color: #00e8ba;
+  background-color: #b3f3ec;
   top: 0;
   overflow: hidden;
   position: sticky;
@@ -47,14 +44,16 @@ h1 {
 .nav-link {
   vertical-align: middle;
   display: inline;
+  background: #ededed;
   color: #121212;
   text-decoration: none;
   list-style-type: none;
-  margin: 4%;
-  padding-top: 1.5%;
-  padding-bottom: 1.5%;
+  margin: 2%;
+  padding: 1.5% 2%;
   font-size: 2.4rem;
   font-weight: bold;
+  border: 2px solid #121212;
+  border-radius: 5px;
 }
 
 main {
@@ -91,7 +90,7 @@ ul {
 }
 
 section {
-  background-color: #2ee800;
+  background-color: #c0f8b3;
   padding-bottom: 10px;
   padding-top: 10px;
   margin-top: 20px;
