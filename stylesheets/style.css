@@ -1,13 +1,24 @@
+/* * will make it so the properties apply to every single element or tag, in this case, it will make every element have the
+line-height set to 140% of the size of the text's font size.
+*/
 * {
+  /* line-height is the amount of space that is specified between one line of text and another for text elements*/
   line-height: 140%;
 }
+
 html {
+  /* Makes the scroll have a smooth animation when going to a part of the webpage instead of a jump to that location*/
   scroll-behavior: smooth;
   font-size: 62.5%;
 }
 
 body {
-  font-family: "Cambria", Georgia, Serif;
+  /* determines what fonts to use, third font should always be either 
+  serif or sans-serif depending on what type of font you are using.
+
+  3 fonts is the ideal amount for any website.
+  */
+  font-family: "Cambria", Georgia, serif;
   background-color: #ededed;
   font-size: 1.6rem;
 }
@@ -20,6 +31,9 @@ nav {
   background-color: #b3f3ec;
   top: 0;
   overflow: hidden;
+  /*Makes the element stick to the screen which means it will still be on-screen, no matter where you are on the webpage
+  and if you scroll past it if it were a different postion rather than sticky.
+  */
   position: sticky;
   border: 5px solid #121212;
 }
@@ -56,6 +70,17 @@ h1 {
   border-radius: 5px;
 }
 
+/* :hover means it will apply the specifc css properties for that element, id (specific element), 
+or class (various specific elements) whenever the user hovers over any of the said element on the website.
+*/
+
+.nav-link:hover {
+  padding: 2%;
+}
+
+#back-to-top:hover {
+  padding: 2%;
+}
 main {
   text-align: center;
 }
@@ -87,6 +112,10 @@ ul {
   font-size: 1.6rem;
   text-decoration: none;
   color: #121212;
+  background-color: #ededed;
+  border: 2px solid #121212;
+  border-radius: 5px;
+  padding: 1.5% 2%;
 }
 
 section {
