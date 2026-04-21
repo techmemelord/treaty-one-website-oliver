@@ -74,13 +74,16 @@ h1 {
 or class (various specific elements) whenever the user hovers over any of the said element on the website.
 */
 
-.nav-link:hover {
+a:hover,
+a:focus {
   padding: 2%;
 }
 
+#back-to-top:focus,
 #back-to-top:hover {
   padding: 2%;
 }
+
 main {
   text-align: center;
 }
@@ -115,6 +118,7 @@ ul {
   background-color: #ededed;
   border: 2px solid #121212;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
   padding: 1.5% 2%;
 }
 
