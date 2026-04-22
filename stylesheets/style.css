@@ -41,6 +41,7 @@ nav {
 h1 {
   display: inline-block;
   font-weight: bold;
+  /* this will make it add space that is 4% the size of the parent element which in this case is the nav */
   margin-left: 4%;
   vertical-align: middle;
   font-size: 6.4rem;
@@ -79,9 +80,19 @@ a:focus {
   padding: 2%;
 }
 
+a:active {
+  padding: 2%;
+  background-color: #cecece;
+}
+
 #back-to-top:focus,
 #back-to-top:hover {
   padding: 2%;
+}
+
+#back-to-top:active {
+  padding: 2%;
+  background-color: #cecece;
 }
 
 main {
