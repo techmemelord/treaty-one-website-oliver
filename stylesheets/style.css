@@ -13,6 +13,7 @@ html {
 }
 
 body {
+  text-align: center;
   /* determines what fonts to use, third font should always be either 
   serif or sans-serif depending on what type of font you are using.
 
@@ -23,29 +24,31 @@ body {
   font-size: 1.6rem;
 }
 
-h3 {
-  font-size: 2.4rem;
-}
 nav {
-  display: block;
+  margin: 0px auto;
   background-color: #b3f3ec;
-  top: 0;
-  overflow: hidden;
+  top: 0px;
   /*Makes the element stick to the screen which means it will still be on-screen, no matter where you are on the webpage
   and if you scroll past it if it were a different postion rather than sticky.
   */
+  padding: 2% 0px;
   position: sticky;
   border: 5px solid #121212;
+  max-width: 90%;
 }
 
 h1 {
-  display: inline-block;
+  /* The maximum width of the h1 element will be 90% of the width relative to it's parent element which
+  in this case is in the header tag which is in the body tag*/
+  max-width: 90%;
+  margin: 2% auto;
   font-weight: bold;
   /* this will make it add space that is 4% the size of the parent element which in this case is the nav */
-  margin-left: 4%;
   vertical-align: middle;
   font-size: 6.4rem;
   text-transform: uppercase;
+  background: #b3f3ec;
+  border: #121212 5px solid;
 }
 .nav-item {
   display: inline;
@@ -63,9 +66,9 @@ h1 {
   color: #121212;
   text-decoration: none;
   list-style-type: none;
-  margin: 2%;
-  padding: 1.5% 2%;
-  font-size: 2.4rem;
+  margin: 4% 1%;
+  padding: 1.5% 0.15%;
+  font-size: 2.1rem;
   font-weight: bold;
   border: 2px solid #121212;
   border-radius: 5px;
@@ -74,29 +77,43 @@ h1 {
 /* :hover means it will apply the specifc css properties for that element, id (specific element), 
 or class (various specific elements) whenever the user hovers over any of the said element on the website.
 */
-
+img {
+  border: 1px #86ae7d solid;
+  padding: 3px;
+  background-color: #121212;
+}
 a:hover,
 a:focus {
-  padding: 2%;
+  padding: 2% 0.15%;
 }
 
 a:active {
-  padding: 2%;
+  padding: 2% 0.15%;
   background-color: #cecece;
 }
 
+a {
+  transition-property: padding;
+  transition-duration: 1s;
+}
 #back-to-top:focus,
 #back-to-top:hover {
   padding: 2%;
 }
 
 #back-to-top:active {
-  padding: 2%;
   background-color: #cecece;
 }
 
 main {
+  /* The maximum width of the main element will be 90% of the width relative to it's parent element which
+  in this case is in the body tag
+  
+  This will also make the elements inside the main scale their width with the main
+  */
+  max-width: 90%;
   text-align: center;
+  margin: 0px auto;
 }
 
 h2 {
@@ -123,6 +140,9 @@ ul {
 }
 
 #back-to-top {
+  position: fixed;
+  right: 0;
+  bottom: 0;
   font-size: 1.6rem;
   text-decoration: none;
   color: #121212;
