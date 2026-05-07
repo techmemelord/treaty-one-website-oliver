@@ -27,6 +27,7 @@ body {
 nav {
   margin: 0px auto;
   background-color: #b3f3ec;
+  /* This will make it so that it will stick to the screen after it reaches the top of the viewport of the website */
   top: 0px;
   /*Makes the element stick to the screen which means it will still be on-screen, no matter where you are on the webpage
   and if you scroll past it if it were a different postion rather than sticky.
@@ -34,6 +35,9 @@ nav {
   padding: 2% 0px;
   position: sticky;
   border: 5px solid #121212;
+  /* The maximum width of the nav  element will be 90% of the width relative to it's parent element which
+  in this case is in the body tag
+ */
   max-width: 90%;
 }
 
@@ -43,7 +47,6 @@ h1 {
   max-width: 90%;
   margin: 2% auto;
   font-weight: bold;
-  /* this will make it add space that is 4% the size of the parent element which in this case is the nav */
   vertical-align: middle;
   font-size: 6.4rem;
   text-transform: uppercase;
@@ -51,9 +54,11 @@ h1 {
   border: #121212 5px solid;
 }
 .nav-item {
+  /* this will make all the elements with the class of nav-item to display as an inline element*/
   display: inline;
 }
 #nav-list {
+  /* this will make all the elements with the class of nav-list to display as an inline element*/
   display: inline;
 }
 #main-content {
@@ -94,10 +99,18 @@ a:active {
 
 a {
   transition-property: padding;
+  -o-transition-property: padding;
+  -moz-transition-property: padding;
+  -webkit-transition-property: padding;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -moz-transition-duration: 1s;
   transition-duration: 1s;
 }
 #back-to-top:focus,
 #back-to-top:hover {
+  /* this will add a space between the element content and border that is 2% of the size relative to it's parent element 
+  which is the footer which is in the body */
   padding: 2%;
 }
 
@@ -108,8 +121,6 @@ a {
 main {
   /* The maximum width of the main element will be 90% of the width relative to it's parent element which
   in this case is in the body tag
-  
-  This will also make the elements inside the main scale their width with the main
   */
   max-width: 90%;
   text-align: center;
@@ -140,16 +151,22 @@ ul {
 }
 
 #back-to-top {
+  /* position: fixed; will make it so that the element with the id of back-to-top to always be in a specific position in the
+  viewport of the website, no matter where the user is one the website */
   position: fixed;
+  /* this will make it so the element will be placed to the furthest right of the user's viewport without changing its size */
   right: 0;
+  /* this will make it so the element will be placed to the bottom of the user's viewport without changing its size */
   bottom: 0;
   font-size: 1.6rem;
   text-decoration: none;
   color: #121212;
   background-color: #ededed;
   border: 2px solid #121212;
+  /* border-radius will make the corners of the border on an element smoother and rounder */
   border-radius: 5px;
   -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   padding: 1.5% 2%;
 }
 
