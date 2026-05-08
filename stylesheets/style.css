@@ -58,7 +58,7 @@ h1 {
   display: inline;
 }
 #nav-list {
-  /* this will make all the elements with the class of nav-list to display as an inline element*/
+  /* this will make all the elements with the class of nav-list to behave and display as an inline element*/
   display: inline;
 }
 #main-content {
@@ -66,6 +66,7 @@ h1 {
 }
 .nav-link {
   vertical-align: middle;
+  /* makes all the elements with the class of nav-link to behave and display as inline elements*/
   display: inline;
   background: #ededed;
   color: #121212;
@@ -89,19 +90,41 @@ img {
 }
 a:hover,
 a:focus {
+  /* this will make it so there is space between the border and the content
+  of the a to be relative to 2% of the size of the parent which is the nav in the padding spaces of up and down
+  and 0.15% of the size of the parent in the padding spaces of left and right */
   padding: 2% 0.15%;
 }
-
+p {
+  /* this will make it so there is space beyond the border of the paragraph element to be relative to 2% of the size
+  of the section which is in the body */
+  margin: 2%;
+}
 a:active {
+  /* this will make it so there is space between the border and the content
+  of the a to be relative to 2% of the size of the parent which is the nav in the padding spaces of up and down
+  and 0.15% of the size of the parent in the padding spaces of left and right */
   padding: 2% 0.15%;
   background-color: #cecece;
 }
 
 a {
+  /* these transition properties all make it so the only property to apply a transition is the padding of the
+  element.
+
+  The purpose of multiple prefixes is to support these transitions on different browsers that require such prefixes 
+  in order for the property to be supported
+  */
   transition-property: padding;
   -o-transition-property: padding;
   -moz-transition-property: padding;
   -webkit-transition-property: padding;
+  /* these transition durations all make it so the transition of the
+  element lasts 1 second.
+
+  The purpose of multiple prefixes is to support these transition durations on different browsers that require such prefixes 
+  in order for the property to be supported
+  */
   -webkit-transition-duration: 1s;
   -o-transition-duration: 1s;
   -moz-transition-duration: 1s;
@@ -140,9 +163,53 @@ ul {
   text-align: left;
   list-style-type: square;
 }
+
+@keyframes borderResize {
+  from {
+    border: 0px solid #121212;
+    padding: 0px;
+  }
+  to {
+    border: 2px solid #121212;
+    padding: 2px;
+  }
+}
+
 .important-text {
   font-style: italic;
   text-decoration: underline;
+}
+
+.important-text:hover {
+  /* these animation-name properties all make it so the animation to play is the borderResize animation
+
+  The purpose is to support these animations on different browsers that require such prefixes 
+  in order for the property to be supported
+  */
+  -webkit-animation-name: borderResize;
+  -o-animation-name: borderResize;
+  -moz-animation-name: borderResize;
+  animation-name: borderResize;
+  /* these animation durations all make it so the transition of the
+  element lasts 0.2 seconds.
+
+  The purpose is to support these animation durations on different browsers that require such prefixes 
+  in order for the property to be supported
+  */
+  -webkit-animation-duration: 0.2s;
+  -o-animation-duration: 0.2s;
+  -moz-animation-duration: 0.2s;
+  animation-duration: 0.2s;
+  /* these animation-fill-mode properties all make it so the animation will keep its properties of the
+  final keyframe of the borderResize animation
+
+  The purpose of multiple prefixes is to support these animations on different browsers that require such prefixes 
+  in order for the property to be supported
+  */
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .treaty-one-text {
@@ -154,10 +221,14 @@ ul {
   /* position: fixed; will make it so that the element with the id of back-to-top to always be in a specific position in the
   viewport of the website, no matter where the user is one the website */
   position: fixed;
-  /* this will make it so the element will be placed to the furthest right of the user's viewport without changing its size */
-  right: 0;
-  /* this will make it so the element will be placed to the bottom of the user's viewport without changing its size */
-  bottom: 0;
+  /* this will make it so the element with the id back-to-top will be placed to the furthest right
+  but with space on the right that is relative to 1% of the the size of the footer
+  which is in the body  */
+  right: 1%;
+  /* this will make it so the element with the id back-to-top will be placed to the bottom
+  but with space on the bottom that is relative to 1% of the the size of the footer which is
+  in the body  */
+  bottom: 1%;
   font-size: 1.6rem;
   text-decoration: none;
   color: #121212;
@@ -180,8 +251,7 @@ section {
 }
 
 footer {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0px;
 }
 
 figcaption {
