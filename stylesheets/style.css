@@ -1,3 +1,16 @@
+/* 
+How I chose the client color scheme:
+
+I chose orange as the primary color since it is related to important Indigenous awareness themes, such as Orange Shirt Day. 
+The meaning behind the orange shirt is very impactful because it reminds people of what happened and 
+why we need to continue moving forward with awareness, respect, and reconciliation. 
+Treaties are also connected to this and represent how we continue moving forward together in the reconciliation process.
+
+Then I used a color wheel tool and selected analogous colors to create a warm and harmonious palette.
+
+Finally, I selected neutral colors such as off-black and off-white instead of pure black and white to create a softer and more balanced visual experience.
+*/
+
 /* * will make it so the properties apply to every single element or tag, in this case, it will make every element have the
 line-height set to 140% of the size of the text's font size.
 */
@@ -9,251 +22,1095 @@ line-height set to 140% of the size of the text's font size.
 html {
   /* Makes the scroll have a smooth animation when going to a part of the webpage instead of a jump to that location*/
   scroll-behavior: smooth;
+  /* This makes rem font sizes easier to understand. */
   font-size: 62.5%;
+ 
 }
 
 body {
-  text-align: center;
+  margin: 0;
+  text-align: left;
   /* determines what fonts to use, third font should always be either 
   serif or sans-serif depending on what type of font you are using.
 
   3 fonts is the ideal amount for any website.
   */
   font-family: "Cambria", Georgia, serif;
-  background-color: #ededed;
+  background-color: #ffffff;
+  color: #121212;
   font-size: 1.6rem;
 }
 
-nav {
-  margin: 0px auto;
-  background-color: #b3f3ec;
-  /* This will make it so that it will stick to the screen after it reaches the top of the viewport of the website */
-  top: 0px;
-  /*Makes the element stick to the screen which means it will still be on-screen, no matter where you are on the webpage
-  and if you scroll past it if it were a different postion rather than sticky.
-  */
-  padding: 2% 0px;
+/* This styles the top bar with the Treaty 1 logo on the left and the navigation on the right. */
+header {
+  position: -webkit-sticky;
   position: sticky;
-  border: 5px solid #121212;
-  /* The maximum width of the nav  element will be 90% of the width relative to it's parent element which
-  in this case is in the body tag
- */
-  max-width: 90%;
-}
-
-h1 {
-  /* The maximum width of the h1 element will be 90% of the width relative to it's parent element which
-  in this case is in the header tag which is in the body tag*/
-  max-width: 90%;
+  top: 0;
+  z-index: 999;
+  max-width:88%;
   margin: 2% auto;
-  font-weight: bold;
-  vertical-align: middle;
-  font-size: 6.4rem;
-  text-transform: uppercase;
-  background: #b3f3ec;
-  border: #121212 5px solid;
-}
-.nav-item {
-  /* this will make all the elements with the class of nav-item to display as an inline element*/
-  display: inline;
-}
-#nav-list {
-  /* this will make all the elements with the class of nav-list to behave and display as an inline element*/
-  display: inline;
-}
-#main-content {
-  padding: 20px;
-}
-.nav-link {
-  vertical-align: middle;
-  /* makes all the elements with the class of nav-link to behave and display as inline elements*/
-  display: inline;
-  background: #ededed;
-  color: #121212;
-  text-decoration: none;
-  list-style-type: none;
-  margin: 4% 1%;
-  padding: 1.5% 0.15%;
-  font-size: 2.1rem;
-  font-weight: bold;
-  border: 2px solid #121212;
-  border-radius: 5px;
+  padding: 16px;
+  overflow: auto;
+  background-color: #E6942A;
+  border: 1px solid #C96F2C;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 8px 20px rgba(201, 111, 44, 0.18);
+  -moz-box-shadow: 0 8px 20px rgba(201, 111, 44, 0.18);
+  box-shadow: 0 8px 20px rgba(201, 111, 44, 0.18);
 }
 
-/* :hover means it will apply the specifc css properties for that element, id (specific element), 
-or class (various specific elements) whenever the user hovers over any of the said element on the website.
-*/
-img {
-  border: 1px #86ae7d solid;
-  padding: 3px;
-  background-color: #121212;
-}
-a:hover,
-a:focus {
-  /* this will make it so there is space between the border and the content
-  of the a to be relative to 2% of the size of the parent which is the nav in the padding spaces of up and down
-  and 0.15% of the size of the parent in the padding spaces of left and right */
-  padding: 2% 0.15%;
-}
-p {
-  /* this will make it so there is space beyond the border of the paragraph element to be relative to 2% of the size
-  of the section which is in the body */
-  margin: 2%;
-}
-a:active {
-  /* this will make it so there is space between the border and the content
-  of the a to be relative to 2% of the size of the parent which is the nav in the padding spaces of up and down
-  and 0.15% of the size of the parent in the padding spaces of left and right */
-  padding: 2% 0.15%;
-  background-color: #cecece;
-}
+/* This styles the largest heading which is the main heading on each page. */
 
-a {
-  /* these transition properties all make it so the only property to apply a transition is the padding of the
-  element.
-
-  The purpose of multiple prefixes is to support these transitions on different browsers that require such prefixes 
-  in order for the property to be supported
-  */
-  transition-property: padding;
-  -o-transition-property: padding;
-  -moz-transition-property: padding;
-  -webkit-transition-property: padding;
-  /* these transition durations all make it so the transition of the
-  element lasts 1 second.
-
-  The purpose of multiple prefixes is to support these transition durations on different browsers that require such prefixes 
-  in order for the property to be supported
-  */
-  -webkit-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  -moz-transition-duration: 1s;
-  transition-duration: 1s;
-}
-#back-to-top:focus,
-#back-to-top:hover {
-  /* this will add a space between the element content and border that is 2% of the size relative to it's parent element 
-  which is the footer which is in the body */
-  padding: 2%;
-}
-
-#back-to-top:active {
-  background-color: #cecece;
-}
-
-main {
-  /* The maximum width of the main element will be 90% of the width relative to it's parent element which
-  in this case is in the body tag
-  */
-  max-width: 90%;
-  text-align: center;
-  margin: 0px auto;
-}
-
-h2 {
+/* Text styles */
+h1 {
   font-size: 4rem;
-  font-style: italic;
 }
-
+h2 {
+  font-size: 3.2rem;
+  text-align: center;
+}
 h3 {
   font-size: 2.4rem;
-  font-style: italic;
+  text-align: center;
+}
+h4 {
+  font-size: 1.9rem;
+}
+p {
+  /* This adds space around the paragraphs. */
+  margin: 2%;
+}
+.font-bold{
+  font-weight: 700;
+}
+.font-normal{
+  font-weight: 400;
+}
+/* This styles the div that holds the logo and main heading on each page. */
+.logo {
+  /* This makes the logo stay on the left side of the header. */
+  float: left;
+  width: 22%;
+}
+
+.logo h1 {
+  /* This keeps the logo vertically centered with the navigation buttons. */
+  padding-top: 0;
+  padding-left: 20px;
+  margin: 0px;
 }
 ul {
+  /* This makes lists easier to read because they will be lined up on the left. */
   text-align: left;
   list-style-type: square;
 }
 
-@keyframes borderResize {
-  from {
-    border: 0px solid #121212;
-    padding: 0px;
-  }
-  to {
-    border: 2px solid #121212;
-    padding: 2px;
-  }
-}
-
 .important-text {
+  /* This makes important words or phrases stand out. */
   font-style: italic;
   text-decoration: underline;
 }
 
-.important-text:hover {
-  /* these animation-name properties all make it so the animation to play is the borderResize animation
-
-  The purpose is to support these animations on different browsers that require such prefixes 
-  in order for the property to be supported
-  */
-  -webkit-animation-name: borderResize;
-  -o-animation-name: borderResize;
-  -moz-animation-name: borderResize;
-  animation-name: borderResize;
-  /* these animation durations all make it so the transition of the
-  element lasts 0.2 seconds.
-
-  The purpose is to support these animation durations on different browsers that require such prefixes 
-  in order for the property to be supported
-  */
-  -webkit-animation-duration: 0.2s;
-  -o-animation-duration: 0.2s;
-  -moz-animation-duration: 0.2s;
-  animation-duration: 0.2s;
-  /* these animation-fill-mode properties all make it so the animation will keep its properties of the
-  final keyframe of the borderResize animation
-
-  The purpose of multiple prefixes is to support these animations on different browsers that require such prefixes 
-  in order for the property to be supported
-  */
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-
 .treaty-one-text {
+  /* This makes every Treaty 1 phrase look the same. */
   font-weight: bold;
   font-style: italic;
 }
 
-#back-to-top {
-  /* position: fixed; will make it so that the element with the id of back-to-top to always be in a specific position in the
-  viewport of the website, no matter where the user is one the website */
-  position: fixed;
-  /* this will make it so the element with the id back-to-top will be placed to the furthest right
-  but with space on the right that is relative to 1% of the the size of the footer
-  which is in the body  */
-  right: 1%;
-  /* this will make it so the element with the id back-to-top will be placed to the bottom
-  but with space on the bottom that is relative to 1% of the the size of the footer which is
-  in the body  */
-  bottom: 1%;
-  font-size: 1.6rem;
-  text-decoration: none;
+/* Links */
+a {
   color: #121212;
-  background-color: #ededed;
-  border: 2px solid #121212;
-  /* border-radius will make the corners of the border on an element smoother and rounder */
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  padding: 1.5% 2%;
+}
+
+a:active {
+  /* This shows when a link is being clicked. */
+  background-color: #cecece;
+}
+
+/* This styles the navigation bar found near the top of each page. */
+nav {
+  float: right;
+  width: 74%;
+  padding-top: 0;
+}
+
+#nav-list {
+  /* Overflow auto keeps the floated links inside the navigation bar. */
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.nav-item {
+  /* This makes each navigation item float beside the next one. */
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+/* This styles the navigation links which are found inside the navigation bar near the top of each page. */
+.nav-link {
+  display: block;
+  margin: 0 4%;
+  padding: 10px 8px;
+  line-height: 24px;
+  background-color: #fafafa;
+  color: #121212;
+  text-decoration: none;
+  font-size: 1.8rem;
+  /* Border radius makes the link corners round. */
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  border-radius: 999px;
+  /* Transition makes the hover change happen smoothly. */
+  -webkit-transition: -webkit-transform 0.3s ease, background-color 0.3s ease;
+  -o-transition: -o-transform 0.3s ease, background-color 0.3s ease;
+  -moz-transition: -moz-transform 0.3s ease, background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+/* This styles the navigation links when the user hovers over them or focuses on them with the keyboard. */
+.nav-link:hover,
+.nav-link:focus {
+  background-color: #fff7ec;
+  -webkit-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  -moz-transform: scale(1.07);
+  -o-transform: scale(1.07);
+  transform: scale(1.07);
+}
+/* This class is for aligning text to the center, which is good for titles and short paragraphs. */
+.text-center{
+  text-align: center;
+}
+/* This class is for aligning text to the left, which is better for readability for longer paragraphs. */
+.text-left{
+  text-align: left;
+}
+/* This class is for adding a margin of 20 pixels to the top of an element. */
+.margin-top-20{
+  margin-top: 20px;
+}
+/* This class is for removing the margin from the top of an element. */
+.margin-top-remove{
+  margin-top: 0px;
+}
+/* This class is for adding a margin of 20 pixels to the bottom of an element. */
+main li {
+    /* This adds space under list items in the main content, but it does not affect the navigation menu. */
+    margin-bottom: 20px;
+}
+/* Main page layout */
+main {
+/* This keeps the main content centered and not too wide. */
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 section {
-  background-color: #c0f8b3;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: 5px solid #121212;
+  /* Sections are the main content boxes on each page. */
+  margin: 20px 0;
+  padding: 50px 0;
+  background-color: #fce0ba;
+  border: 1px solid #C96F2C;
+    /* Border radius will make the corners of each section element slightly round with multiple prefixes to support
+  this property on different browsers. */
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+/* This class is for the content inside each section, which is used to keep the text from being too wide and hard to read. */
+.section-content {
+  /* This keeps the text within sections from being too wide. */
+  width: 88%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+/* Color assets */
+.color-primary {
+  background-color: #E6942A;
 }
 
-footer {
-  padding: 20px 0px;
+.color-secondary {
+  background-color: #E8C96B;
+}
+
+.color-tertiary {
+  background-color: #C96F2C;
+}
+
+.bg-light {
+  background-color: #fafafa;
+}
+
+#main-content {
+  /* This adds extra space inside the main explanation section. */
+  padding: 30px 0;
+}
+
+.treaty-background-section {
+  /* This adds the Treaty 1 image as the background for this section. */
+  /* The multiple background-image properties with different prefixes are for better browser support. */
+  /* The linear-gradient will add a dark overlay over the image to make the text easier to read. */
+  background-image: -webkit-linear-gradient(rgba(18, 18, 18, 0.95), rgba(18, 18, 18, 0.72)), url("../images/Treaty 1.jpg");
+  background-image: -moz-linear-gradient(rgba(18, 18, 18, 0.95), rgba(18, 18, 18, 0.72)), url("../images/Treaty 1.jpg");
+  background-image: -o-linear-gradient(rgba(18, 18, 18, 0.95), rgba(18, 18, 18, 0.72)), url("../images/Treaty 1.jpg");
+  background-image: linear-gradient(rgba(18, 18, 18, 0.95), rgba(18, 18, 18, 0.72)), url("../images/Treaty 1.jpg");
+  background-image: -webkit-linear-gradient(rgba(252, 224, 186, 0.88), rgba(237, 237, 237, 0.82)), url("../images/Treaty 1.jpg");
+  background-image: -moz-linear-gradient(rgba(252, 224, 186, 0.88), rgba(237, 237, 237, 0.82)), url("../images/Treaty 1.jpg");
+  background-image: -o-linear-gradient(rgba(252, 224, 186, 0.88), rgba(237, 237, 237, 0.82)), url("../images/Treaty 1.jpg");
+  background-image: linear-gradient(rgba(252, 224, 186, 0.88), rgba(237, 237, 237, 0.82)), url("../images/Treaty 1.jpg");
+  background-position: center;
+  background-size: cover;
+  /* this will not make the image repeat and only show once in the section */
+  background-repeat: no-repeat;
+  color: #121212;
+  /* this determines the minimum height of the section so that the background image will show up even if there isn't too much text */
+  min-height: 500px;
+  background-attachment: fixed;
+}
+
+.treaty-background-section .section-content {
+  /* This adds spacing so the text sits inside the background image with a appeasing amount of null space. */
+  padding: 30px;
+  margin-top: 100px;
+  text-shadow: none;
+}
+
+.treaty-background-section .important-text,
+.treaty-background-section .treaty-one-text {
+  /* This keeps the highlighted text readable on the light background. */
+  color: #121212;
+}
+
+.treaty-background-section h2 + p {
+  /* This adds a space of 35 pixels below each paragraph in the background section. */
+  margin-bottom: 35px;
+}
+
+
+#back-to-top {
+  /* Fixed position keeps this back to top button in the corner of the screen. */
+  position: fixed;
+  /* This will make it so it is 1% away from the right edge of the screen. 
+  The distance is relative to the width of the screen so it will automatically be adjusted on different screens
+  */
+  right: 1%;
+  /* This will make it so it is 1% away from the bottom edge of the screen. 
+  The distance is relative to the height of the screen so it will automatically be adjusted on different screens
+  */
+  bottom: 1%;
+  padding: 1.5% 2%;
+  color: #121212;
+  background-color: #ededed;
+  border: 2px solid #121212;
+  text-decoration: none;
+  font-size: 1.6rem;
+  /* will make the corners of the back to top button slightly rounder. 
+  The multiple properties with prefixes are to support this on various browsers.
+  */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#back-to-top:hover,
+#back-to-top:focus {
+  padding: 2%;
+}
+
+/* Regular image cards */
+.image-card {
+  /* Relative position lets the caption sit on top of the image. */
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  margin: 40px 40px 0px 40px;
+  /* Overflow hidden hides the parts of the image that zoom outside the card. */
+  overflow: hidden;
+  /* This changes the mouse icon so the user knows they can click the image. */
+  cursor: pointer;
+  /* will make the corners of the image card slightly rounder. 
+  The multiple properties with prefixes are to support this on various browsers.
+  */
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+}
+
+.image-card img {
+  /* This makes the image fill the card. */
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* object-fit keeps the image from stretching. */
+  object-fit: cover;
+  object-position: center;
+  /* This makes the zoom effect when hovering smooth. 
+  Multiple properties with certain prefixes are there so it is supported on various browsers
+  */
+  -webkit-transition: -webkit-transform 0.5s ease;
+  -o-transition: -o-transform 0.5s ease;
+  -moz-transition: -moz-transform 0.5s ease;
+  transition: transform 0.5s ease;
+}
+
+.caption {
+  /* Absolute position puts the caption over the image. */
+  position: absolute;
+  /* inset: 0 makes the caption cover the whole image card. */
+  inset: 0;
+  /* Flexbox centers the caption text. */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.45);
+  /* Opacity 0 hides the caption until hover. */
+  opacity: 0;
+  /* This will move the caption down a little so it can slide up when the image card is hovered. 
+  Multiple properties with prefixes are to support this on various browsers.
+  */
+  -webkit-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  -o-transform: translateY(20px);
+  transform: translateY(20px);
+  /* This makes the caption's change of properties to be smooth instead of an instant jump. */
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+/* This styles the specifc h2 inside the caption class*/
+.caption h2 {
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+/* This styles the paragraph tags inside the caption class */
+.caption p {
+  /* makes the width of the caption text be a maximum of 700 pixels to make it easy to read */
+  max-width: 700px;
+  font-size: 1.6rem;
+}
+.conclusion {
+    color: #ffffff;
+    padding: 20px;
+    width: 55%;
+    margin: auto;
+
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    border: 1px solid #E8C96B;
+    font-style: italic;
+    margin-top: 40px;
+    font-size: 1.8rem;
+}
+.image-card:hover img {
+  /* This zooms the image a little when the mouse is over it by increasing its scale.
+  There is multiple of the same property with different prefixes to support this on various browsers.
+  */
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -o-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+.image-card:hover .caption {
+  /* This shows the caption when the mouse is over the image card. */
+  /* Opacity 1 makes the caption fully visible. */
+  opacity: 1;
+  /* This moves the caption back to its original position. 
+  There are multiple repeated properties to support this on different browsers.
+  */
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* Slider */
+.slider {
+  /* Flex puts all slides in one horizontal row. */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* This keeps the slider from being too wide on large screens by limiting it to only be 900 pixels wide. */
+  max-width: 900px;
+  margin: 30px auto;
+  /* Overflow hidden shows only one slide at a time. */
+  overflow: hidden;
+  /* Border radius will make the corners of the slider slightly round. */
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+}
+
+.slider .image-card {
+  /* Each slide takes the full width of the slider. */
+  min-width: 100%;
+  max-width: none;
+  margin: 0;
+  /* This starts the automatic slider animation. */
+  -webkit-animation: autoSlide 12s ease-in-out infinite;
+  -o-animation: autoSlide 12s ease-in-out infinite;
+  -moz-animation: autoSlide 12s ease-in-out infinite;
+  animation: autoSlide 12s ease-in-out infinite;
+}
+
+.slider .caption {
+  /* This makes slider captions darker so text is easier to read. */
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.slider:hover .image-card {
+  /* This pauses the slider animation when the mouse is hovering over it. */
+  -webkit-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* The slider moves to the next image every 3 seconds. */
+@-webkit-keyframes autoSlide {
+  0%,
+  20% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  25%,
+  45% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  50%,
+  70% {
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%);
+  }
+
+  75%,
+  95% {
+    -webkit-transform: translateX(-300%);
+    transform: translateX(-300%);
+  }
+
+  100% {
+    -webkit-transform: translateX(-400%);
+    transform: translateX(-400%);
+  }
+}
+
+@-moz-keyframes autoSlide {
+  0%,
+  20% {
+    -moz-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  25%,
+  45% {
+    -moz-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  50%,
+  70% {
+    -moz-transform: translateX(-200%);
+    transform: translateX(-200%);
+  }
+
+  75%,
+  95% {
+    -moz-transform: translateX(-300%);
+    transform: translateX(-300%);
+  }
+
+  100% {
+    -moz-transform: translateX(-400%);
+    transform: translateX(-400%);
+  }
+}
+
+@-o-keyframes autoSlide {
+  0%,
+  20% {
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  25%,
+  45% {
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  50%,
+  70% {
+    -o-transform: translateX(-200%);
+    transform: translateX(-200%);
+  }
+
+  75%,
+  95% {
+    -o-transform: translateX(-300%);
+    transform: translateX(-300%);
+  }
+
+  100% {
+    -o-transform: translateX(-400%);
+    transform: translateX(-400%);
+  }
+}
+
+@keyframes autoSlide {
+  0%,
+  20% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  25%,
+  45% {
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  50%,
+  70% {
+    -webkit-transform: translateX(-200%);
+    -ms-transform: translateX(-200%);
+    -moz-transform: translateX(-200%);
+    -o-transform: translateX(-200%);
+    transform: translateX(-200%);
+  }
+
+  75%,
+  95% {
+    -webkit-transform: translateX(-300%);
+    -ms-transform: translateX(-300%);
+    -moz-transform: translateX(-300%);
+    -o-transform: translateX(-300%);
+    transform: translateX(-300%);
+  }
+
+  100% {
+    -webkit-transform: translateX(-400%);
+    -ms-transform: translateX(-400%);
+    -moz-transform: translateX(-400%);
+    -o-transform: translateX(-400%);
+    transform: translateX(-400%);
+  }
+}
+
+/* Float and clear helper classes */
+.float-left {
+  /* This makes an element move to the left so the text can wrap beside and around it. */
+  float: left;
+  width: 35%;
+  margin: 0 20px 20px 0;
+}
+
+figure {
+  text-align: center;
+}
+
+.float-left #figure-two {
+  /* This makes the map fill the floated figure instead of staying too small. */
+  width: 100%;
+  height: auto;
+}
+
+.float-right {
+  /* This makes an element move to the right so the text can wrap beside and around it. */
+  float: right;
+  width: 35%;
+  margin: 0 0 20px 20px;
+}
+
+.float-right .thumbnail {
+  /* This makes the lightbox thumbnail fill the floated figure completely. */
+  width: 100%;
+  height: auto;
+}
+
+.clear-left {
+  /* This moves the element with the class of clear-left below anything floating on the left. */
+  clear: left;
+}
+
+.clear-right {
+  /* This moves the element with the class of clear-right below anything floating on the right. */
+  clear: right;
+}
+
+.clear-both {
+  /* This moves the element with the class of clear-both below anything floating on either side. */
+  clear: both;
+}
+
+.topic-row {
+  /* This gives space between each topic so the sections do not look too squished together. */
+  margin: 35px 0;
+}
+
+.topic-text {
+  /* This makes the topic writing line up on the left, which makes longer paragraphs easier to read. */
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.topic-image {
+  /* This is the image side for each topic. It uses about 40 percent of the row. */
+  width: 40%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.topic-image img {
+  /* This makes the image use the full image side and keeps the whole image visible. */
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #ffffff;
+  -webkit-box-shadow: 0 8px 18px rgba(18, 18, 18, 0.18);
+  -moz-box-shadow: 0 8px 18px rgba(18, 18, 18, 0.18);
+  box-shadow: 0 8px 18px rgba(18, 18, 18, 0.18);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.topic-text h2,
+.topic-text h3 {
+  /* This keeps the topic title lined up with the topic text instead of centered. */
+  text-align: left;
+}
+
+.nation-card-row {
+  /* This gives space above the cards that explain each Indigenous Nation. */
+  margin-top: 25px;
+}
+
+.nation-card {
+  /* This makes each Nation card float beside the other card. */
+  float: left;
+  width: 48%;
+  min-height: 430px;
+  margin: 0 1% 20px;
+  padding: 18px;
+  background-color: #ffffff;
+  border: 1px solid #C96F2C;
+  -webkit-box-shadow: 0 8px 18px rgba(18, 18, 18, 0.14);
+  -moz-box-shadow: 0 8px 18px rgba(18, 18, 18, 0.14);
+  box-shadow: 0 8px 18px rgba(18, 18, 18, 0.14);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.nation-card img {
+  /* This makes the image fit nicely at the top of each card. */
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  border: 1px solid #ffffff;
+}
+
+.nation-card h3 {
+  /* This keeps each card title lined up with its paragraph. */
+  margin: 0 0 10px;
+  text-align: left;
+}
+
+.nation-card p {
+  /* This keeps the card writing easy to read. */
+  margin: 0;
+  text-align: left;
+}
+
+.community-card-row {
+  /* This gives space above the community cards. */
+  margin-top: 20px;
+}
+.community-card {
+  /* This makes each community name look like its own small card. */
+  float: left;
+  width: 31.33%;
+  margin: 1%;
+  padding: 18px;
+  background-color: #ffffff;
+  border: 1px solid #C96F2C;
+  color: #121212;
+  font-weight: bold;
+  text-align: center;
+  -webkit-box-shadow: 0 8px 18px rgba(18, 18, 18, 0.14);
+  -moz-box-shadow: 0 8px 18px rgba(18, 18, 18, 0.14);
+  box-shadow: 0 8px 18px rgba(18, 18, 18, 0.14);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.community-card.last {
+    width: 64.5%;
+    height: 165px;
+}
+.image-left {
+  /* This makes the image float on the left side so the text can go beside it. */
+  float: left;
+  margin: 28px 0 20px 0;
+}
+
+.image-right {
+  /* This makes the image float on the right side so the layout switches sides. */
+  float: right;
+  margin: 28px 0 20px 0;
+}
+
+.clearfix::after {
+  /* This helps a parent element with the class of clearfix wrap around floated elements inside it. */
+  content: "";
+  display: block;
+  clear: both;
 }
 
 figcaption {
   font-size: 1.6rem;
 }
+
+.margin-text {
+  /* This gives the paragraph with the class of margin-text space so it lines up better beside the floated map. */
+  margin: 80px 0 20px;
+  text-align: left;
+}
+
+/* Map comparison section */
+.map-comparison-section {
+  /* This keeps the new map section centered inside the page.
+  This element with the class of map-comparison-section can only be as wide as 1100px in order to keep it from not being stretched.
+  */
+  max-width: 1100px;
+}
+
+.map-comparison-title {
+  /* This keeps the title spaced above the two maps with a maximum width of 850px. */
+  max-width: 850px;
+  margin: 0 auto 50px;
+}
+
+.map-column {
+  /* setting the display to inline-block will set the two map blocks beside each other without using flex or grid. */
+  display: inline-block;
+  /* This makes the map columns take up a little less than half of the width of the map comparison section. */
+  width: 45%;
+  margin: 0 2%;
+  vertical-align: top;
+  text-align: left;
+}
+
+/* This styles the h3 headings with the class of map-column */
+.map-column h3 {
+  /* This keeps the map labels smaller than the main page headings. */
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+}
+
+.comparison-map {
+  /* This makes both maps fit inside their columns. */
+  width: 100%;
+  height: 360px;
+  /* This keeps the map from stretching weirdly inside the image box. */
+  object-fit: contain;
+  /* This changes the mouse so users know they can click the map. */
+  cursor: pointer;
+  background-color: #ffffff;
+    /* Border radius will make the corners of the element with the class of comparison-map slightly round with multiple prefixes to support
+  this property on different browsers. */
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+}
+
+.map-column p {
+  /* This makes the paragraph under each map easier to read. */
+  margin: 20px 0;
+  font-size: 1.6rem;
+}
+
+.did-you-know-text {
+  /* This centers the fact under the Did You Know heading. */
+  margin: 0;
+  text-align: center;
+}
+
+/* This styles the footer which can be found at the bottom of each page of the website. */
+footer {
+  background-color: #C96F2C;
+   /* This adds space of 32px around the content in the footer. */
+  padding: 32px;
+  margin: auto;
+  overflow: auto;
+}
+
+.footer-column {
+  float: left;
+  width: 31.33%;
+  min-height: 190px;
+  margin: 0 1%;
+  padding: 18px;
+  background-color: #fafafa;
+  border: 1px solid #C96F2C;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.footer-column h3 {
+  margin: 0 0 12px;
+  text-align: left;
+}
+
+.footer-column a {
+  display: block;
+  margin: 8px 0;
+  color: #121212;
+}
+
+.footer-column p {
+  margin: 8px 0;
+}
+
+.footer-bottom {
+  clear: both;
+  padding-top: 24px;
+  text-align: center;
+  color:#fafafa
+}
+
+.footer-bottom p {
+  margin: 8px 0;
+}
+
+@media screen and (max-width: 760px) {
+  .logo,
+  nav {
+    /* This makes the logo and navigation stack on small screens. */
+    float: none;
+    width: 100%;
+  }
+
+  .logo h1 {
+    /* This centers the logo on small screens. */
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .nav-item {
+    /* This makes each nav item take the full width on small screens. */
+    float: none;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .nav-link {
+    margin: 0;
+  }
+
+  .topic-image,
+  .topic-text {
+    /* This makes the image and text take the full width on small screens so they do not get squeezed. */
+    float: none;
+    width: 100%;
+  }
+
+  .topic-image {
+    margin: 0 0 20px;
+  }
+
+  .nation-card {
+    /* This makes the Nation cards stack on small screens. */
+    float: none;
+    width: 100%;
+    min-height: 0;
+    margin: 0 0 20px;
+  }
+
+  .community-card {
+    /* This makes the community cards stack on small screens. */
+    float: none;
+    width: 100%;
+    margin: 0 0 16px;
+  }
+
+  .footer-column {
+    float: none;
+    width: 100%;
+    min-height: 0;
+    margin: 0 0 16px;
+  }
+}
+
+.thumbnail {
+    /* This is the small map image that users click to open the lightbox.
+    This will make it have a width of 320px and have a maximum width of 100% so it can fit on smaller screens without overflowing.
+    */
+    width: 320px;
+    max-width: 100%;
+    /* This makes the edges of the thumbnail slightly rounder. */
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    /* This changes the cursor's image to let the user know they can interact with the thumbnail and open the lightbox. */
+    cursor: pointer;
+    /* This makes the thumbnail's zoom effect smooth when being hovered on. */
+    -webkit-transition: -webkit-transform 0.3s ease;
+    -o-transition: -o-transform 0.3s ease;
+    -moz-transition: -moz-transform 0.3s ease;
+    transition: transform 0.3s ease;
+  }
+
+  .thumbnail:hover {
+    /* This makes the thumbnail grow a little when the user hovers over it. */
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    transform: scale(1.03);
+  }
+
+  /* Styles the lightbox */
+  .lightbox {
+    /* Fixed position makes the lightbox cover the whole screen and be stuck to the user's viewport in a certain position. */
+    position: fixed;
+    /* the inset property will make the lightbox cover the entire viewport of the user by 
+    setting the top, right, bottom, and left properties to 0. */
+    inset: 0;
+    /* Flexbox centers the large image inside the lightbox. */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* This makes the lightbox's content be aligned in the center of the screen. */
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 2rem;
+    /* Makes the background of the lightbox be a semi-transparent black background */
+    background: rgba(18, 18, 18, 0.75);
+    /* The lightbox starts hidden until the user clicks a map. */
+    opacity: 0;
+    visibility: hidden;
+    /* This makes all of the changes to the lightbox's properties be smooth instead of an instant jump. 
+    There are multiple properties with certain prefixes to support this on various browsers.
+    */
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    /* This will make it so the lightbox will overlap everything on the webpage when it is visible. */
+    z-index: 999999999;
+  }
+
+  /* Open state */
+  .lightbox:target {
+    /* :target styles the lightbox when the URL matches its id. 
+    This will make the lightbox be visible when :target has been executed
+    */
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Large image */
+  .lightbox img {
+    /* This controls the large image inside the lightbox. */
+    width: 100%;
+    max-width: 900px;
+    max-height: 90vh;
+    object-fit: contain;
+    
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    /* This makes the image start slighly smaller in order to zoom in when the lightbox is opened 
+    by using transform to scale it without changing the layout.
+    There are multiple repeating properties with certain prefixes to support this on different browsers.
+    */
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+    /* Makes the image's transform to be smooth when it changes with multiple properties with prefixes to support this on different browsers. */
+    -webkit-transition: -webkit-transform 0.3s ease;
+    -o-transition: -o-transform 0.3s ease;
+    -moz-transition: -moz-transform 0.3s ease;
+    transition: transform 0.3s ease;
+  }
+
+  .lightbox:target img {
+    /* This makes the image zoom in a little when the lightbox opens. */
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+
+  /* Close button */
+  .close {
+    /* This places the X button in the top right corner. */
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: white;
+    text-decoration: none;
+    font-size: 42px;
+    font-weight: bold;
+  }
