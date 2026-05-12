@@ -11,8 +11,8 @@ Then I used a color wheel tool and selected analogous colors to create a warm an
 Finally, I selected neutral colors such as off-black and off-white instead of pure black and white to create a softer and more balanced visual experience.
 */
 
-/* * will make it so the properties apply to every single element or tag, in this case, it will make every element have the
-line-height set to 140% of the size of the text's font size.
+/* the * selector will make it so the properties apply to every single element or tag, 
+in this case, it will make every element have the line-height set to 140% of the size of the text's font size.
 */
 * {
   /* line-height is the amount of space that is specified between one line of text and another for text elements*/
@@ -24,7 +24,6 @@ html {
   scroll-behavior: smooth;
   /* This makes rem font sizes easier to understand. */
   font-size: 62.5%;
- 
 }
 
 body {
@@ -47,12 +46,12 @@ header {
   position: sticky;
   top: 0;
   z-index: 999;
-  max-width:88%;
+  max-width: 88%;
   margin: 2% auto;
   padding: 16px;
   overflow: auto;
-  background-color: #E6942A;
-  border: 1px solid #C96F2C;
+  background-color: #e6942a;
+  border: 1px solid #c96f2c;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -82,10 +81,10 @@ p {
   /* This adds space around the paragraphs. */
   margin: 2%;
 }
-.font-bold{
+.font-bold {
   font-weight: 700;
 }
-.font-normal{
+.font-normal {
   font-weight: 400;
 }
 /* This styles the div that holds the logo and main heading on each page. */
@@ -122,6 +121,7 @@ ul {
 /* Links */
 a {
   color: #121212;
+  text-decoration: none;
 }
 
 a:active {
@@ -155,20 +155,27 @@ nav {
   display: block;
   margin: 0 4%;
   padding: 10px 8px;
-  line-height: 24px;
   background-color: #fafafa;
   color: #121212;
   text-decoration: none;
   font-size: 1.8rem;
-  /* Border radius makes the link corners round. */
+  /* Border radius makes the link corners round with multiple prefixes to support it on different browsers. */
   -webkit-border-radius: 999px;
   -moz-border-radius: 999px;
   border-radius: 999px;
   /* Transition makes the hover change happen smoothly. */
-  -webkit-transition: -webkit-transform 0.3s ease, background-color 0.3s ease;
-  -o-transition: -o-transform 0.3s ease, background-color 0.3s ease;
-  -moz-transition: -moz-transform 0.3s ease, background-color 0.3s ease;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  -webkit-transition:
+    -webkit-transform 0.3s ease,
+    background-color 0.3s ease;
+  -o-transition:
+    -o-transform 0.3s ease,
+    background-color 0.3s ease;
+  -moz-transition:
+    -moz-transform 0.3s ease,
+    background-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
 }
 /* This styles the navigation links when the user hovers over them or focuses on them with the keyboard. */
 .nav-link:hover,
@@ -181,29 +188,29 @@ nav {
   transform: scale(1.07);
 }
 /* This class is for aligning text to the center, which is good for titles and short paragraphs. */
-.text-center{
+.text-center {
   text-align: center;
 }
 /* This class is for aligning text to the left, which is better for readability for longer paragraphs. */
-.text-left{
+.text-left {
   text-align: left;
 }
 /* This class is for adding a margin of 20 pixels to the top of an element. */
-.margin-top-20{
+.margin-top-20 {
   margin-top: 20px;
 }
 /* This class is for removing the margin from the top of an element. */
-.margin-top-remove{
+.margin-top-remove {
   margin-top: 0px;
 }
 /* This class is for adding a margin of 20 pixels to the bottom of an element. */
 main li {
-    /* This adds space under list items in the main content, but it does not affect the navigation menu. */
-    margin-bottom: 20px;
+  /* This adds space under list items in the main content, but it does not affect the navigation menu. */
+  margin-bottom: 20px;
 }
 /* Main page layout */
 main {
-/* This keeps the main content centered and not too wide. */
+  /* This keeps the main content centered and not too wide. */
   max-width: 90%;
   margin: 0 auto;
 }
@@ -213,8 +220,8 @@ section {
   margin: 20px 0;
   padding: 50px 0;
   background-color: #fce0ba;
-  border: 1px solid #C96F2C;
-    /* Border radius will make the corners of each section element slightly round with multiple prefixes to support
+  border: 1px solid #c96f2c;
+  /* Border radius will make the corners of each section element slightly round with multiple prefixes to support
   this property on different browsers. */
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -229,15 +236,15 @@ section {
 }
 /* Color assets */
 .color-primary {
-  background-color: #E6942A;
+  background-color: #e6942a;
 }
 
 .color-secondary {
-  background-color: #E8C96B;
+  background-color: #e8c96b;
 }
 
 .color-tertiary {
-  background-color: #C96F2C;
+  background-color: #c96f2c;
 }
 
 .bg-light {
@@ -253,14 +260,33 @@ section {
   /* This adds the Treaty 1 image as the background for this section. */
   /* The multiple background-image properties with different prefixes are for better browser support. */
   /* The linear-gradient will add a dark overlay over the image to make the text easier to read. */
-  background-image: -webkit-linear-gradient(rgba(18, 18, 18, 0.95), rgba(18, 18, 18, 0.72)), url("../images/Treaty 1.jpg");
-  background-image: -moz-linear-gradient(rgba(18, 18, 18, 0.95), rgba(18, 18, 18, 0.72)), url("../images/Treaty 1.jpg");
-  background-image: -o-linear-gradient(rgba(18, 18, 18, 0.95), rgba(18, 18, 18, 0.72)), url("../images/Treaty 1.jpg");
-  background-image: linear-gradient(rgba(18, 18, 18, 0.95), rgba(18, 18, 18, 0.72)), url("../images/Treaty 1.jpg");
-  background-image: -webkit-linear-gradient(rgba(252, 224, 186, 0.88), rgba(237, 237, 237, 0.82)), url("../images/Treaty 1.jpg");
-  background-image: -moz-linear-gradient(rgba(252, 224, 186, 0.88), rgba(237, 237, 237, 0.82)), url("../images/Treaty 1.jpg");
-  background-image: -o-linear-gradient(rgba(252, 224, 186, 0.88), rgba(237, 237, 237, 0.82)), url("../images/Treaty 1.jpg");
-  background-image: linear-gradient(rgba(252, 224, 186, 0.88), rgba(237, 237, 237, 0.82)), url("../images/Treaty 1.jpg");
+  background-image:
+    -webkit-linear-gradient(rgba(18, 18, 18, 0.95), rgba(18, 18, 18, 0.72)),
+    url("../images/Treaty 1.jpg");
+  background-image:
+    -moz-linear-gradient(rgba(18, 18, 18, 0.95), rgba(18, 18, 18, 0.72)),
+    url("../images/Treaty 1.jpg");
+  background-image:
+    -o-linear-gradient(rgba(18, 18, 18, 0.95), rgba(18, 18, 18, 0.72)),
+    url("../images/Treaty 1.jpg");
+  background-image:
+    linear-gradient(rgba(18, 18, 18, 0.95), rgba(18, 18, 18, 0.72)),
+    url("../images/Treaty 1.jpg");
+  background-image:
+    -webkit-linear-gradient(
+      rgba(252, 224, 186, 0.88),
+      rgba(237, 237, 237, 0.82)
+    ),
+    url("../images/Treaty 1.jpg");
+  background-image:
+    -moz-linear-gradient(rgba(252, 224, 186, 0.88), rgba(237, 237, 237, 0.82)),
+    url("../images/Treaty 1.jpg");
+  background-image:
+    -o-linear-gradient(rgba(252, 224, 186, 0.88), rgba(237, 237, 237, 0.82)),
+    url("../images/Treaty 1.jpg");
+  background-image:
+    linear-gradient(rgba(252, 224, 186, 0.88), rgba(237, 237, 237, 0.82)),
+    url("../images/Treaty 1.jpg");
   background-position: center;
   background-size: cover;
   /* this will not make the image repeat and only show once in the section */
@@ -289,7 +315,6 @@ section {
   margin-bottom: 35px;
 }
 
-
 #back-to-top {
   /* Fixed position keeps this back to top button in the corner of the screen. */
   position: fixed;
@@ -303,7 +328,7 @@ section {
   bottom: 1%;
   padding: 1.5% 2%;
   color: #121212;
-  background-color: #ededed;
+  background-color: #fafafa;
   border: 2px solid #121212;
   text-decoration: none;
   font-size: 1.6rem;
@@ -317,9 +342,18 @@ section {
 
 #back-to-top:hover,
 #back-to-top:focus {
-  padding: 2%;
-}
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -o-transform: scale(1.07);
+  -moz-transform: scale(1.07);
+  -webkit-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  transform: scale(1.07);
 
+  background-color: #fff7ec;
+}
 /* Regular image cards */
 .image-card {
   /* Relative position lets the caption sit on top of the image. */
@@ -409,18 +443,18 @@ section {
   font-size: 1.6rem;
 }
 .conclusion {
-    color: #ffffff;
-    padding: 20px;
-    width: 55%;
-    margin: auto;
+  color: #ffffff;
+  padding: 20px;
+  width: 55%;
+  margin: auto;
 
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    border-radius: 16px;
-    border: 1px solid #E8C96B;
-    font-style: italic;
-    margin-top: 40px;
-    font-size: 1.8rem;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  border: 1px solid #e8c96b;
+  font-style: italic;
+  margin-top: 40px;
+  font-size: 1.8rem;
 }
 .image-card:hover img {
   /* This zooms the image a little when the mouse is over it by increasing its scale.
@@ -732,7 +766,7 @@ figure {
   margin: 0 1% 20px;
   padding: 18px;
   background-color: #ffffff;
-  border: 1px solid #C96F2C;
+  border: 1px solid #c96f2c;
   -webkit-box-shadow: 0 8px 18px rgba(18, 18, 18, 0.14);
   -moz-box-shadow: 0 8px 18px rgba(18, 18, 18, 0.14);
   box-shadow: 0 8px 18px rgba(18, 18, 18, 0.14);
@@ -771,29 +805,39 @@ figure {
   margin-top: 20px;
 }
 .community-card {
-  /* This makes each community name look like its own small card. */
+  /* This makes each community name appear as its own little card. */
   float: left;
   width: 31.33%;
   margin: 1%;
   padding: 18px;
   background-color: #ffffff;
-  border: 1px solid #C96F2C;
+  border: 1px solid #c96f2c;
   color: #121212;
   font-weight: bold;
   text-align: center;
+  /* This adds shadow inside the box with 8px on the top and bottom and 18px on the left and right 
+  There are mutliple repeating properties to support this on different browsers
+  */
   -webkit-box-shadow: 0 8px 18px rgba(18, 18, 18, 0.14);
   -moz-box-shadow: 0 8px 18px rgba(18, 18, 18, 0.14);
   box-shadow: 0 8px 18px rgba(18, 18, 18, 0.14);
+  /* Border radius will make the corners of the slider slightly round with mutliple properties with certain prefixes to
+  suppot it on different browsers. */
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
+  /*This determines how the total width and height of the element are calculated.
+  This is set to border-box.
+  There are multiple repeating properties to support it on certain browsers.
+  */
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 .community-card.last {
-    width: 64.5%;
-    height: 165px;
+  /* sets the height of the element to 165px and have a width of 64.5% of the size relative to the parent. */
+  width: 64.5%;
+  height: 165px;
 }
 .image-left {
   /* This makes the image float on the left side so the text can go beside it. */
@@ -814,10 +858,6 @@ figure {
   clear: both;
 }
 
-figcaption {
-  font-size: 1.6rem;
-}
-
 .margin-text {
   /* This gives the paragraph with the class of margin-text space so it lines up better beside the floated map. */
   margin: 80px 0 20px;
@@ -827,7 +867,8 @@ figcaption {
 /* Map comparison section */
 .map-comparison-section {
   /* This keeps the new map section centered inside the page.
-  This element with the class of map-comparison-section can only be as wide as 1100px in order to keep it from not being stretched.
+  This element with the class of map-comparison-section can only be as wide as 1100px in order to
+  keep it from not being stretched.
   */
   max-width: 1100px;
 }
@@ -858,15 +899,15 @@ figcaption {
 }
 
 .comparison-map {
-  /* This makes both maps fit inside their columns. */
+  /* This makes both maps fit inside their respective columns. */
   width: 100%;
   height: 360px;
-  /* This keeps the map from stretching weirdly inside the image box. */
+  /* This keeps the map from stretching weirdly within the image box. */
   object-fit: contain;
   /* This changes the mouse so users know they can click the map. */
   cursor: pointer;
   background-color: #ffffff;
-    /* Border radius will make the corners of the element with the class of comparison-map slightly round with multiple prefixes to support
+  /* Border radius will make the corners of the element with the class of comparison-map slightly round with multiple prefixes to support
   this property on different browsers. */
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
@@ -887,24 +928,37 @@ figcaption {
 
 /* This styles the footer which can be found at the bottom of each page of the website. */
 footer {
-  background-color: #C96F2C;
-   /* This adds space of 32px around the content in the footer. */
+  background-color: #c96f2c;
+  /* This adds space of 32px around the content in the footer. */
   padding: 32px;
+  /* makes the max width of the footer 90% of the width relative to its parent element */
+  max-width: 90%;
   margin: auto;
   overflow: auto;
 }
 
 .footer-column {
   float: left;
+  /* makes the width of the element with the class of footer-column be 31.33% of the size relative to its parent element. */
   width: 31.33%;
+  /* this makes it so the height of the element with the class of footer-column has to always be 190px or higher. */
   min-height: 190px;
+  /* adds a margin to the left and right in which the size of the margin is 1% relative to the parent element. */
   margin: 0 1%;
+  /* adds 18px of padding around the inner content on all sides. */
   padding: 18px;
   background-color: #fafafa;
-  border: 1px solid #C96F2C;
+  border: 1px solid #c96f2c;
+  /* makes the corners more round 
+  There are multiple prefixes to support this on different browsers.
+  */
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
+  /*This determines how the total width and height of the element are calculated.
+  This is set to border-box.
+  There are multiple repeating properties to support it on certain browsers.
+  */
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -915,10 +969,18 @@ footer {
   text-align: left;
 }
 
-.footer-column a {
+/* sets the style of the hyperlink tags inside the class element of footer-column when they aren't visited yet by the user */
+.footer-column a:link {
   display: block;
   margin: 8px 0;
   color: #121212;
+}
+
+/* changes the style of the hyperlink tags inside the class element of footer-column after they are visited by the user */
+.footer-column a:visited {
+  display: block;
+  margin: 8px 0;
+  color: #7e461b;
 }
 
 .footer-column p {
@@ -926,10 +988,11 @@ footer {
 }
 
 .footer-bottom {
+  /* clear makes it clear the float if it is either right or left */
   clear: both;
   padding-top: 24px;
   text-align: center;
-  color:#fafafa
+  color: #fafafa;
 }
 
 .footer-bottom p {
@@ -941,6 +1004,7 @@ footer {
   nav {
     /* This makes the logo and navigation stack on small screens. */
     float: none;
+    /* makes it take up the highest width possible relative to its parent element */
     width: 100%;
   }
 
@@ -953,6 +1017,7 @@ footer {
   .nav-item {
     /* This makes each nav item take the full width on small screens. */
     float: none;
+    /* makes it take up the highest width possible relative to its parent element */
     width: 100%;
     margin-bottom: 8px;
   }
@@ -965,18 +1030,23 @@ footer {
   .topic-text {
     /* This makes the image and text take the full width on small screens so they do not get squeezed. */
     float: none;
+    /* makes it take up the highest width possible relative to its parent element */
     width: 100%;
   }
 
   .topic-image {
+    /* makes there be a margin of 20px on the bottom and left sides of the element */
     margin: 0 0 20px;
   }
 
   .nation-card {
     /* This makes the Nation cards stack on small screens. */
     float: none;
+    /* makes it take up the highest width possible relative to its parent element */
     width: 100%;
+    /* makes the minimum height of the element be 0px */
     min-height: 0;
+    /* makes there be a margin of 20px on the bottom and left sides of the element */
     margin: 0 0 20px;
   }
 
@@ -984,133 +1054,150 @@ footer {
     /* This makes the community cards stack on small screens. */
     float: none;
     width: 100%;
+    /* makes there be a margin of 16px on the bottom and left sides of the element */
     margin: 0 0 16px;
   }
 
   .footer-column {
     float: none;
+    /* makes it take up the highest width possible relative to its parent element */
     width: 100%;
+    /* makes the minimum height of the element be 0px */
     min-height: 0;
+    /* makes there be a margin of 16px on the bottom and left sides of the element */
     margin: 0 0 16px;
   }
 }
 
 .thumbnail {
-    /* This is the small map image that users click to open the lightbox.
-    This will make it have a width of 320px and have a maximum width of 100% so it can fit on smaller screens without overflowing.
-    */
-    width: 320px;
-    max-width: 100%;
-    /* This makes the edges of the thumbnail slightly rounder. */
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    border-radius: 16px;
-    /* This changes the cursor's image to let the user know they can interact with the thumbnail and open the lightbox. */
-    cursor: pointer;
-    /* This makes the thumbnail's zoom effect smooth when being hovered on. */
-    -webkit-transition: -webkit-transform 0.3s ease;
-    -o-transition: -o-transform 0.3s ease;
-    -moz-transition: -moz-transform 0.3s ease;
-    transition: transform 0.3s ease;
-  }
+  /* 
+    This is the small map image that users click to open the lightbox.
+    This will make it have a width of 320px and have a maximum width of 100% so it 
+    can fit on smaller screens without overflowing.
+  */
+  width: 320px;
+  max-width: 100%;
+  /* This makes the edges of the thumbnail slightly rounder. */
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  /* This changes the cursor's image to let the user know they can interact with the thumbnail and open the lightbox. */
+  cursor: pointer;
+  /* This makes the thumbnail's zoom effect smooth when being hovered on with mutliple prefixes to support this on
+  different browsers. */
+  -webkit-transition: -webkit-transform 0.3s ease;
+  -o-transition: -o-transform 0.3s ease;
+  -moz-transition: -moz-transform 0.3s ease;
+  transition: transform 0.3s ease;
+}
 
-  .thumbnail:hover {
-    /* This makes the thumbnail grow a little when the user hovers over it. */
-    -webkit-transform: scale(1.03);
-    -ms-transform: scale(1.03);
-    -moz-transform: scale(1.03);
-    -o-transform: scale(1.03);
-    transform: scale(1.03);
-  }
+.thumbnail:hover {
+  /* This makes the thumbnail grow a little when the user hovers over it.
+  Multiple specific prefixes are present to support this on different browsers
+  */
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  transform: scale(1.03);
+}
 
-  /* Styles the lightbox */
-  .lightbox {
-    /* Fixed position makes the lightbox cover the whole screen and be stuck to the user's viewport in a certain position. */
-    position: fixed;
-    /* the inset property will make the lightbox cover the entire viewport of the user by 
+/* Styles the lightbox */
+.lightbox {
+  /* Fixed position makes the lightbox cover the whole screen and be stuck to the user's viewport in a certain position. */
+  position: fixed;
+  /* the inset property will make the lightbox cover the entire viewport of the user by 
     setting the top, right, bottom, and left properties to 0. */
-    inset: 0;
-    /* Flexbox centers the large image inside the lightbox. */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    /* This makes the lightbox's content be aligned in the center of the screen. */
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 2rem;
-    /* Makes the background of the lightbox be a semi-transparent black background */
-    background: rgba(18, 18, 18, 0.75);
-    /* The lightbox starts hidden until the user clicks a map. */
-    opacity: 0;
-    visibility: hidden;
-    /* This makes all of the changes to the lightbox's properties be smooth instead of an instant jump. 
+  inset: 0;
+  /* Flexbox centers the large image inside the lightbox. */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* This makes the lightbox's content be aligned in the center of the screen. */
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2rem;
+  /* Makes the background of the lightbox be a semi-transparent black background */
+  background: rgba(18, 18, 18, 0.75);
+  /* The lightbox starts hidden until the user clicks a map. */
+  opacity: 0;
+  visibility: hidden;
+  /* This makes all of the changes to the lightbox's properties be smooth instead of an instant jump. 
     There are multiple properties with certain prefixes to support this on various browsers.
     */
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    /* This will make it so the lightbox will overlap everything on the webpage when it is visible. */
-    z-index: 999999999;
-  }
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  /* This will make it so the lightbox will overlap everything on the webpage when it is visible. */
+  z-index: 999999999;
+}
 
-  /* Open state */
-  .lightbox:target {
-    /* :target styles the lightbox when the URL matches its id. 
+/* Open state */
+.lightbox:target {
+  /* :target styles the lightbox when the URL matches its id. 
     This will make the lightbox be visible when :target has been executed
     */
-    opacity: 1;
-    visibility: visible;
-  }
+  opacity: 1;
+  visibility: visible;
+}
 
-  /* Large image */
-  .lightbox img {
-    /* This controls the large image inside the lightbox. */
-    width: 100%;
-    max-width: 900px;
-    max-height: 90vh;
-    object-fit: contain;
-    
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    /* This makes the image start slighly smaller in order to zoom in when the lightbox is opened 
+/* Large image */
+.lightbox img {
+  /* This controls the large image inside the lightbox. */
+  width: 100%;
+  max-width: 900px;
+  max-height: 90vh;
+  object-fit: contain;
+  /* makes the element's corners become rounder 
+  There are multiple repeating properties to support this on various browsers
+  */
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  /* This makes the image start slighly smaller in order to zoom in when the lightbox is opened 
     by using transform to scale it without changing the layout.
     There are multiple repeating properties with certain prefixes to support this on different browsers.
     */
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    -moz-transform: scale(0.9);
-    -o-transform: scale(0.9);
-    transform: scale(0.9);
-    /* Makes the image's transform to be smooth when it changes with multiple properties with prefixes to support this on different browsers. */
-    -webkit-transition: -webkit-transform 0.3s ease;
-    -o-transition: -o-transform 0.3s ease;
-    -moz-transition: -moz-transform 0.3s ease;
-    transition: transform 0.3s ease;
-  }
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  /* Makes the image's transform to be smooth when it changes with multiple properties 
+  with prefixes to support this on different browsers. */
+  -webkit-transition: -webkit-transform 0.3s ease;
+  -o-transition: -o-transform 0.3s ease;
+  -moz-transition: -moz-transform 0.3s ease;
+  transition: transform 0.3s ease;
+}
 
-  .lightbox:target img {
-    /* This makes the image zoom in a little when the lightbox opens. */
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
-  }
+.lightbox:target img {
+  /* This makes the image zoom in a little when the lightbox opens. 
+  There are properties with certain prefixes to support this on different browsers.
+  */
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
 
-  /* Close button */
-  .close {
-    /* This places the X button in the top right corner. */
-    position: absolute;
-    top: 30px;
-    right: 40px;
-    color: white;
-    text-decoration: none;
-    font-size: 42px;
-    font-weight: bold;
-  }
+/* Close button */
+.close {
+  /* This places the X button in the top right corner. */
+  /* postion: absolute positions the element relative to the nearest positioned ancestor */
+  position: absolute;
+  /* makes it have a space of 30px from the top of the page */
+  top: 30px;
+  /* makes it have a space of 40px from the right of the page */
+  right: 40px;
+  color: white;
+  text-decoration: none;
+  font-size: 42px;
+  font-weight: bold;
+}
