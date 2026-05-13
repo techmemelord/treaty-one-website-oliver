@@ -35,7 +35,7 @@ body {
   3 fonts is the ideal amount for any website.
   */
   font-family: "Cambria", Georgia, serif;
-  background-color: #ffffff;
+  background-color: #fafafa;
   color: #121212;
   font-size: 1.6rem;
 }
@@ -124,6 +124,9 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  background-color: #dadada;
+}
 a:active {
   /* This shows when a link is being clicked. */
   background-color: #cecece;
@@ -244,7 +247,8 @@ section {
 }
 
 .color-tertiary {
-  background-color: #c96f2c;
+  /* background-color: #c96f2c; */
+  background-color: #2e1a0a;
 }
 
 .bg-light {
@@ -328,16 +332,16 @@ section {
   bottom: 1%;
   padding: 1.5% 2%;
   color: #121212;
+  border: 1px solid black;
   background-color: #fafafa;
-  border: 2px solid #121212;
   text-decoration: none;
   font-size: 1.6rem;
   /* will make the corners of the back to top button slightly rounder. 
   The multiple properties with prefixes are to support this on various browsers.
   */
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  border-radius: 999px;
 }
 
 #back-to-top:hover,
@@ -443,7 +447,7 @@ section {
   font-size: 1.6rem;
 }
 .conclusion {
-  color: #ffffff;
+  color: #fafafa;
   padding: 20px;
   width: 55%;
   margin: auto;
@@ -738,7 +742,7 @@ figure {
   display: block;
   width: 100%;
   height: auto;
-  border: 1px solid #ffffff;
+  border: 1px solid #fafafa;
   -webkit-box-shadow: 0 8px 18px rgba(18, 18, 18, 0.18);
   -moz-box-shadow: 0 8px 18px rgba(18, 18, 18, 0.18);
   box-shadow: 0 8px 18px rgba(18, 18, 18, 0.18);
@@ -765,7 +769,7 @@ figure {
   min-height: 430px;
   margin: 0 1% 20px;
   padding: 18px;
-  background-color: #ffffff;
+  background-color: #fafafa;
   border: 1px solid #c96f2c;
   -webkit-box-shadow: 0 8px 18px rgba(18, 18, 18, 0.14);
   -moz-box-shadow: 0 8px 18px rgba(18, 18, 18, 0.14);
@@ -785,7 +789,7 @@ figure {
   height: 220px;
   object-fit: contain;
   margin-bottom: 15px;
-  border: 1px solid #ffffff;
+  border: 1px solid #fafafa;
 }
 
 .nation-card h3 {
@@ -810,7 +814,7 @@ figure {
   width: 31.33%;
   margin: 1%;
   padding: 18px;
-  background-color: #ffffff;
+  background-color: #fafafa;
   border: 1px solid #c96f2c;
   color: #121212;
   font-weight: bold;
@@ -906,7 +910,7 @@ figure {
   object-fit: contain;
   /* This changes the mouse so users know they can click the map. */
   cursor: pointer;
-  background-color: #ffffff;
+  background-color: #fafafa;
   /* Border radius will make the corners of the element with the class of comparison-map slightly round with multiple prefixes to support
   this property on different browsers. */
   -webkit-border-radius: 16px;
@@ -928,13 +932,16 @@ figure {
 
 /* This styles the footer which can be found at the bottom of each page of the website. */
 footer {
-  background-color: #c96f2c;
+  background-color: #2e1a0a;
   /* This adds space of 32px around the content in the footer. */
   padding: 32px;
   /* makes the max width of the footer 90% of the width relative to its parent element */
   max-width: 90%;
   margin: auto;
   overflow: auto;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
 }
 
 .footer-column {
@@ -980,7 +987,7 @@ footer {
 .footer-column a:visited {
   display: block;
   margin: 8px 0;
-  color: #7e461b;
+  color: #502c10;
 }
 
 .footer-column p {

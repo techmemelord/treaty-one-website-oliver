@@ -3,247 +3,294 @@
   Course: Web Development II
   Teacher: Mr. Hardman
   School: Pembina Trails Collegiate (PTC)
-  Date Last Modified: May 6, 2026
+  Date Last Modified: May 13, 2026
 -->
 
 <!doctype html>
 <html lang="en">
-    <head>
-        <!--
-      The ids for these images in the style tag with ids of figure-one and figure-two 
-      determine the size based on the width and height
-      for the images on the website 
+  <head>
+    <!--
+            The ids for these images in the style tag with ids of figure-one and figure-two 
+            determine the size based on the width and height
+            for the images on the website 
 
-      the 40% for width and height in figure-one 
-      will set the width and height of that image to 40% 
-      of the image's base width and height after being scaled with the size of the website's screen
+            the 40% for width and height in figure-one 
+            will set the width and height of that image to 40% 
+            of the image's base width and height after being scaled with the size of the website's screen
 
-      the 25% for width and height in figure-two 
-      will set the width and height of that image to 25% 
-      of the image's base width and height after being scaled with the size of the website's screen
+            the 25% for width and height in figure-two 
+            will set the width and height of that image to 25% 
+            of the image's base width and height after being scaled with the size of the website's screen
     -->
-        <style>
-            #figure-one {
-                width: 40%;
-                height: 40%;
-            }
-            #figure-two {
-                width: 25%;
-                height: 25%;
-              }
-        </style>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="stylesheets/style.css" />
-        <title>Treaty 1 | What is Treaty 1</title>
-    </head>
-    <body>
-        <!-- This is the top title area of the page. -->
-        <header>
-          <div class="logo">
-            <h1>Treaty 1</h1>
-          </div>
-            <!-- This navigation menu lets the user move between the three pages. -->
-            <nav>
-                <ul id="nav-list">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">What is Treaty 1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="people.html">Indigenous People Involved</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="promises.html">Promises and Implementations</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <!-- The main tag holds the most important content on this page. -->
-        <main>
-            <!-- This first section introduces the page and shows the main image. -->
-            <section>
-                <div class="section-content">
-                    <h2>
-                    Welcome to the website of
-                    <!--
-                        All of these span tags that are in the class of treaty-one-text
-                        will be labeled as such within all the text that says
-                        Treaty One and have their style from their external stylesheet applied to it
-                    -->
-                    <span class="treaty-one-text">Treaty 1</span>
-                </h2>
-                <figure class="image-card">
-                    <img src="images/signing-location.jpg" alt="Picture of the location where Treaty 1 was signed" />
+    <style>
+      #figure-one {
+        width: 40%;
+        height: 40%;
+      }
+      #figure-two {
+        width: 25%;
+        height: 25%;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <title>Treaty 1 | What is Treaty 1</title>
+  </head>
+  <body>
+    <!-- This is the top title area of the page which contains the main header of the page. -->
+    <header>
+      <div class="logo">
+        <h1>Treaty 1</h1>
+      </div>
+      <!-- This navigation menu lets the user move between the three pages. -->
+      <nav>
+        <ul id="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="#">What is Treaty 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="people.html"
+              >Indigenous People Involved</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="promises.html"
+              >Promises and Implementations</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- The main tag holds the most important content on this page. This is where all the main content is found-->
+    <main>
+      <!-- This first section introduces the page to the user and shows the main image. -->
+      <section>
+        <div class="section-content">
+          <h2>
+            Welcome to the website of
+            <!--
+              All of these span tags that are in the class of treaty-one-text
+              will be labeled as such within all the text that says
+              Treaty One and have their style from their external stylesheet applied to it
+            -->
+            <span class="treaty-one-text">Treaty 1</span>
+          </h2>
+          <!-- An image with the class of image-card lets the user know what the image is when they hover over it -->
+          <figure class="image-card">
+            <img
+              src="images/signing-location.jpg"
+              alt="Picture of the location where Treaty 1 was signed" />
+            <div class="caption z">
+              <h2>Treaty 1</h2>
+            </div>
+          </figure>
+          <figcaption class="text-center margin-top-20">
+            Fig. 1 – Picture of Treaty 1 being signed at the "Stone Fort".
+          </figcaption>
+        </div>
+      </section>
 
-                    <div class="caption z">
-                        <h2>Treaty 1</h2>
-                     </div>
-                </figure>
-                <figcaption class="text-center margin-top-20">
-                Fig. 1 – Picture of Treaty 1 being signed at the "Stone Fort".
-                </figcaption>
-                </div>
-               
-            </section>
-
-            <!-- This section explains the basic meaning of Treaty 1. -->
-            <section id="main-content" class="treaty-background-section">
-                <div class="section-content">
-                <h2>What is <span class="treaty-one-text">Treaty 1</span>?</h2>
-                <h4 class="font-normal">
-                    <span class="treaty-one-text">Treaty 1</span> was the first numbered treaty that was signed in Canada on August 3, 1871. It covers land in  southern Manitoba, including Winnipeg, and became the  starting point for the other numbered treaties across Canada. This treaty was signed in  the
-                    <!--
+      <!-- This section explains the basic meaning of Treaty 1. -->
+      <section id="main-content" class="treaty-background-section">
+        <div class="section-content">
+          <h2>What is <span class="treaty-one-text">Treaty 1</span>?</h2>
+          <h4 class="font-normal">
+            <span class="treaty-one-text">Treaty 1</span> was the first numbered
+            treaty that was signed in Canada on August 3, 1871. It covers land
+            in southern Manitoba, including Winnipeg, and became the starting
+            point for the other numbered treaties across Canada. This treaty was
+            signed in the
+            <!--
                         All of these span tags that are in the class of important-text
                         classify these parts of texts to appear as important and apply
                         the style from the external stylesheet
                     -->
-                    &#8243;<span class="important-text">Stone Fort</span>&#8243; which is <span class="important-text">Lower Fort Garry</span> in modern-day Manitoba. It is important because it is the treaty land that Winnipeg is located on today.
-                </h4>
+            &#8243;<span class="important-text">Stone Fort</span>&#8243; which
+            is <span class="important-text">Lower Fort Garry</span> in
+            modern-day Manitoba. It is important because it is the treaty land
+            that Winnipeg is located on today.
+          </h4>
 
-                <!-- This part explains what a treaty means in general. -->
-                <h2>What Does a Treaty Mean?</h2>
-                <h4 class="font-normal">
-                    A treaty was a written agreement between two Nations that was approved and signed by both of their leaders. In this case, a numbered treaty in Canada would be an agreement between a group of First Nations people or communities and Canada over a part of land. In exchange, these First Nations people will have land reserved for them which is called &#8243;<span class="important-text">reserve land</span>&#8243;.
-                </h4>
-                </div>
-            </section>
-             
-            <!-- This section compares Treaty 1 with other numbered treaty maps. -->
-            <section>
-                <div class="section-content map-comparison-section">
-                    <h2 class="map-comparison-title">
-                       Treaty 1 is located in southern Manitoba and is part of the numbered treaties across Canada. 
-                    </h2>
-                    <h3 class="map-comparison-title">
-                        Below are maps showing treaty areas across Canada and <br> <span class="treaty-one-text">Treaty 1 territory:</span>
-                    </h3>
+          <!-- This part explains what a treaty means in general. -->
+          <h2>What Does a Treaty Mean?</h2>
+          <h4 class="font-normal">
+            A treaty was a written agreement between two Nations that was
+            approved and signed by both of their leaders. In this case, a
+            numbered treaty in Canada would be an agreement between a group of
+            First Nations people or communities and Canada over a part of land.
+            In exchange, these First Nations people will have land reserved for
+            them which is called &#8243;<span class="important-text"
+              >reserve land</span
+            >&#8243;.
+          </h4>
+        </div>
+      </section>
 
-                    <!-- This div is the left map column. -->
-                    <div class="map-column">
-                        <h3>Historic Treaties Across Canada</h3>
-                        <!-- This link opens the larger version of the map in the lightbox. -->
-                        <a href="#historic-map-lightbox">
-                            <img
-                                class="comparison-map"
-                                src="images/Historic Treaties Across Canada map.webp"
-                                alt="Map showing historic treaties across Canada"
-                            />
-                        </a>
-                        <p>
-                            This map shows the numbered treaties across Canada. Treaty 1 is one of the numbered treaties
-                            and is located in southern Manitoba.
-                        </p>
-                    </div>
+      <!-- This section compares Treaty 1 with other numbered treaty maps. -->
+      <section>
+        <div class="section-content map-comparison-section">
+          <h2 class="map-comparison-title">
+            Treaty 1 is located in southern Manitoba and is part of the numbered
+            treaties across Canada.
+          </h2>
+          <h3 class="map-comparison-title">
+            Below are maps showing treaty areas across Canada and <br />
+            <span class="treaty-one-text">Treaty 1 territory:</span>
+          </h3>
 
-                    <!-- This div is the right map column. -->
-                    <div class="map-column">
-                        <h3>First Nations and Treaty Areas in Manitoba</h3>
-                        <!-- This link opens the larger version of the Manitoba map in the lightbox. -->
-                        <a href="#manitoba-map-lightbox">
-                            <img
-                                class="comparison-map"
-                                src="images/treaty-map.webp"
-                                alt="Map showing First Nations and treaty areas in Manitoba"
-                            />
-                        </a>
-                        <p>
-                            All of the land highlighted in light blue on this map of Manitoba is part of Treaty 1 territory. Various communities, both urban and First Nations, benefit from being part of Treaty 1 territory and also acknowledge that they are located on Treaty 1 land.
-                        </p>
-                    </div>
+          <!-- This div is the left map column which shows the Treaty in a larger context and where in Canada. -->
+          <div class="map-column">
+            <h3>Historic Treaties Across Canada</h3>
+            <!-- This link opens the larger version of the map in the lightbox. -->
+            <a href="#historic-map-lightbox">
+              <img
+                class="comparison-map"
+                src="images/Historic Treaties Across Canada map.webp"
+                alt="Map showing historic treaties across Canada" />
+            </a>
+            <p>
+              This map shows the numbered treaties across Canada. Treaty 1 is
+              one of the numbered treaties and is located in southern Manitoba.
+            </p>
+          </div>
 
-                    <!-- This lightbox shows the Canada map larger when its link is clicked. -->
-                    <div class="lightbox" id="historic-map-lightbox">
-                        <a href="#close-lightbox" class="close">&times;</a>
-                        <img
-                            src="images/Historic Treaties Across Canada map zoom.jpg"
-                            alt="Map showing historic treaties across Canada"
-                        />
-                    </div>
+          <!-- This div is the right map column which is shown where it is in Manitoba. -->
+          <div class="map-column">
+            <h3>First Nations and Treaty Areas in Manitoba</h3>
+            <!-- This link opens the larger version of the Manitoba map in the lightbox. -->
+            <a href="#manitoba-map-lightbox">
+              <img
+                class="comparison-map"
+                src="images/treaty-map.webp"
+                alt="Map showing First Nations and treaty areas in Manitoba" />
+            </a>
+            <p>
+              All of the land highlighted in light blue on this map of Manitoba
+              is part of Treaty 1 territory. Various communities, both urban and
+              First Nations, benefit from being part of Treaty 1 territory and
+              also acknowledge that they are located on Treaty 1 land.
+            </p>
+          </div>
 
-                    <!-- This lightbox shows the Manitoba map larger when its link is clicked. -->
-                    <div class="lightbox" id="manitoba-map-lightbox">
-                        <a href="#close-lightbox" class="close">&times;</a>
-                        <img
-                            src="images/treaty-map.webp"
-                            alt="Map showing First Nations and treaty areas in Manitoba"
-                        />
-                    </div>
+          <!-- This lightbox shows the Canada map larger when its link is clicked. -->
+          <div class="lightbox" id="historic-map-lightbox">
+            <a href="#close-lightbox" class="close">&times;</a>
+            <img
+              src="images/Historic Treaties Across Canada map zoom.jpg"
+              alt="Map showing historic treaties across Canada" />
+          </div>
 
-                    <!-- This is a short fact under the two maps. -->
-                    <div class="section-content color-tertiary conclusion">
-                        <h3 class="margin-top-remove">Did You Know?</h3>
-                        <p class="did-you-know-text">
-                            Treaty 1 was signed on August 3, 1871, at Lower Fort Garry in Manitoba.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <!-- This section explains why Treaty 1 is different from other treaties. -->
-            <section>
-                <div class="section-content">
-                <h2>What Makes this Treaty Unique from Others?</h2>
-                <div class="topic-row clearfix">
-                        <!-- This div holds the image for this topic. -->
-                        <div class="topic-image image-left">
-                            <img src="images/treaty1-logo.jpg" alt="Treaty 1">
-                         </div>
-                         <!-- This div holds the writing for this topic. -->
-                        <div class="topic-text margin-top-20">
-                             <ul>
-                                <li>
-                                    What makes this Treaty different from other Treaties in Canada is that it was the
-                                    <span class="important-text">first Numbered Treaty</span> signed in Canada.
-                                </li>
-                                <li>
-                                    This became the
-                                    foundation for all the other treaties being signed and helped Canada learn how to make agreements
-                                    with the First Nations people that were living on that land thousands of years before they came.
-                                </li>
-                                 <li>
-                                    The treaties also established their sovereignty of certain parts of Canada that would have been taken over
-                                    by other countries if those Treaties haven&#39;t been signed at all.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- This final section wraps up the page. -->
-            <section>
-                <div class="section-content color-tertiary conclusion">
-                <h3>Conclusion</h3>
-                <p>
-                    This concludes a basic summary of what <span class="treaty-one-text">Treaty 1</span>. If you want to learn more about the First Nations communities, important people, and promises connected to <span class="treaty-one-text">Treaty 1</span>, then you can check out our 2 other pages on those two topics to learn more about them!
-                </p>
-                </div>
-            </section>
-        </main>
-        <!-- The footer is the bottom part of the page with sources and extra links. -->
-        <footer>
-            <div class="footer-column">
-                <h3>Social Media</h3>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
-                <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
+          <!-- This lightbox shows the Manitoba map larger when its link is clicked. -->
+          <div class="lightbox" id="manitoba-map-lightbox">
+            <a href="#close-lightbox" class="close">&times;</a>
+            <img
+              src="images/treaty-map.webp"
+              alt="Map showing First Nations and treaty areas in Manitoba" />
+          </div>
+
+          <!-- This is a short fact under the two maps. -->
+          <div class="section-content color-tertiary conclusion">
+            <h3 class="margin-top-remove">Did You Know?</h3>
+            <p class="did-you-know-text">
+              Treaty 1 was signed on August 3, 1871, at Lower Fort Garry in
+              Manitoba.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- This section explains why Treaty 1 is different from other treaties. -->
+      <section>
+        <div class="section-content">
+          <h2>What Makes this Treaty Unique from Others?</h2>
+          <div class="topic-row clearfix">
+            <!-- This div holds the image for this topic. -->
+            <div class="topic-image image-left">
+              <img src="images/treaty1-logo.jpg" alt="Treaty 1" />
             </div>
-            <div class="footer-column">
-                <h3>Links</h3>
-                <a href="#" id="back-to-top" aria-label="Link to go back to the top of the website">Back to top</a>
-                <a href="index.html">What is Treaty 1</a>
-                <a href="people.html">Indigenous People Involved</a>
-                <a href="promises.html">Promises and Implementations</a>
+            <!-- This div holds the writing for this topic. -->
+            <div class="topic-text margin-top-20">
+              <ul>
+                <li>
+                  What makes this Treaty different from other Treaties in Canada
+                  is that it was the
+                  <span class="important-text">first Numbered Treaty</span>
+                  signed in Canada.
+                </li>
+                <li>
+                  This became the foundation for all the other treaties being
+                  signed and helped Canada learn how to make agreements with the
+                  First Nations people that were living on that land thousands
+                  of years before they came.
+                </li>
+                <li>
+                  The treaties also established their sovereignty of certain
+                  parts of Canada that would have been taken over by other
+                  countries if those Treaties haven&#39;t been signed at all.
+                </li>
+              </ul>
             </div>
-            <div class="footer-column">
-                <h3>Contact</h3>
-                <a href="mailto:info@treaty1education.ca">info@treaty1education.ca</a>
-                <a href="tel:+12045550101">204-555-0101</a>
-                <p>Created as a school educational project.</p>
-            </div>
-            <div class="footer-bottom">
-                <p>Treaty 1 reminds us of the importance of truth, respect, and reconciliation.</p>
-                <p>Sources: Treaty Relations Commission of Manitoba, Government of Canada.</p>
-                <p>&copy; 2026 Treaty 1 Educational Website</p>
-            </div>
-        </footer>
-    </body>
+          </div>
+        </div>
+      </section>
+      <!-- This final section wraps up the page. -->
+      <section>
+        <div class="section-content color-tertiary conclusion">
+          <h3>Conclusion</h3>
+          <p>
+            This concludes a basic summary of what
+            <span class="treaty-one-text">Treaty 1</span>. If you want to learn
+            more about the First Nations communities, important people, and
+            promises connected to <span class="treaty-one-text">Treaty 1</span>,
+            then you can check out our 2 other pages on those two topics to
+            learn more about them!
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- The footer is the bottom part of the page with sources and extra links. -->
+    <footer>
+      <div class="footer-column">
+        <h3>Social Media</h3>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+          >Instagram</a
+        >
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+          >Facebook</a
+        >
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+          >YouTube</a
+        >
+      </div>
+      <div class="footer-column">
+        <h3>Links</h3>
+        <a
+          href="#"
+          id="back-to-top"
+          aria-label="Link to go back to the top of the website"
+          >Back to top</a
+        >
+        <a href="index.html">What is Treaty 1</a>
+        <a href="people.html">Indigenous People Involved</a>
+        <a href="promises.html">Promises and Implementations</a>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <a href="mailto:info@treaty1education.ca">info@treaty1education.ca</a>
+        <a href="tel:+12045550101">204-555-0101</a>
+        <p>Created as a school educational project.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          Treaty 1 reminds us of the importance of truth, respect, and
+          reconciliation.
+        </p>
+        <p>
+          Sources: Treaty Relations Commission of Manitoba, Government of
+          Canada.
+        </p>
+        <p>&copy; 2026 Treaty 1 Educational Website</p>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -3,15 +3,15 @@
   Course: Web Development II
   Teacher: Mr. Hardman
   School: Pembina Trails Collegiate (PTC)
-  Date Last Modified: May 7, 2026
+  Date Last Modified: May 13, 2026
 -->
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="stylesheets/style.css" />
-        <!--
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <!--
       The id for the image in the style tag with the id of figure-one
       determine the size based on the width and height
       for the images on the website 
@@ -21,236 +21,299 @@
       of the image's base width and height after being scaled with the size of the website's screen
 
     -->
-        <style>
-            #figure-one {
-                width: 40%;
-                height: 40%;
-            }
-        </style>
-        <title>Treaty 1 | Promises and Implementation</title>
-    </head>
-    <body>
-        <!-- This is the page header with the main website title. -->
-        <header>
-            <div class="logo">
-                <h1>Treaty 1</h1>
+    <style>
+      #figure-one {
+        width: 40%;
+        height: 40%;
+      }
+    </style>
+    <title>Treaty 1 | Promises and Implementation</title>
+  </head>
+  <body>
+    <!-- This is the page header with the main website title. -->
+    <header>
+      <div class="logo">
+        <h1>Treaty 1</h1>
+      </div>
+      <!-- This menu lets the user switch between the website pages. -->
+      <nav>
+        <ul id="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">What is Treaty 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="people.html"
+              >Indigenous People Involved</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="promises.html"
+              >Promises and Implementations</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- The main element holds the main page sections. -->
+    <main>
+      <!-- This first section introduces the promises and implementation page. -->
+      <section>
+        <div class="section-content">
+          <h2>Welcome to the page of Promises and Implementation</h2>
+          <figure class="image-card">
+            <img src="images/flag.webp" alt="Picture of the Treaty 1 Flag" />
+            <div class="caption">
+              <h2>Treaty 1 Flag</h2>
             </div>
-            <!-- This menu lets the user switch between the website pages. -->
-            <nav>
-                <ul id="nav-list">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">What is Treaty 1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="people.html">Indigenous People Involved</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="promises.html">Promises and Implementations</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <!-- The main element holds the main page sections. -->
-        <main>
-            <!-- This first section introduces the promises and implementation page. -->
-            <section>
-                <div class="section-content">
-                <h2>Welcome to the page of Promises and Implementation</h2>
-                <figure class="image-card">
-                    <img src="images/flag.webp" alt="Picture of the Treaty 1 Flag" />
-                    <div class="caption">
-                        <h2>Treaty 1 Flag</h2>
-                    </div>
-                </figure>
-                <figcaption class="margin-top-20 text-center">Treaty 1 Flag: The flag represents the communities and Nations involved in Treaty 1.</figcaption>
-                </div>
-            </section>
-            <!-- This section explains the promises that were part of Treaty 1. -->
-            <section>
-                <div class="section-content">
-                <h2>
-                    What were the historic terms of
-                    <span class="treaty-one-text">Treaty 1</span>?
-                </h2>
-                <p>
-                    Treaties were signed with <span class="important-text">certain entitlements</span> and promises. These entitlements are mainly focused on <span class="important-text">First Nations</span> people who were part of the Treaty and reside on the land in which the Treaty was signed in.
-                </p>
-                <p>
-                    The promises that were made in the signing of
-                    <span class="treaty-one-text">Treaty 1</span> include each family of five recieving
-                    <span class="important-text">160 acres</span> of land &#40;About for 32 acres of land per family
-                    member&#41;, a school being maintained on each reserve of
-                    <span class="treaty-one-text">Treaty 1</span>, pay
-                    <span class="important-text">each family of 5</span> a
-                    <span class="important-text">total of 15 dollars per year</span>
-                    &#40;3 dollars per family member&#41;, and lay aside and
-                    <span class="important-text">reserve land</span> to be
-                    <span class="important-text">exclusively used</span> by
-                    <span class="important-text">First Nations</span>
-                    people on the lots of land they agreed to reserve for them.
-                </p>
-                </div>
-            </section>
-            <!-- This section is for explaining how Treaty 1 connects to today. -->
-            <section>
-                <div class="section-content">
-                <h2>How is <span class="treaty-one-text">Treaty 1</span> being implemented today?</h2>
-                <p>Treaty 1 is not only something from the past. Today, it is still being implemented through Indigenous businesses, urban reserves, housing projects, and economic development in Manitoba.</p>
+          </figure>
+          <figcaption class="margin-top-20 text-center">
+            Treaty 1 Flag: The flag represents the communities and Nations
+            involved in Treaty 1.
+          </figcaption>
+        </div>
+      </section>
+      <!-- This section explains the promises that were part of Treaty 1. -->
+      <section>
+        <div class="section-content">
+          <h2>
+            What were the historic terms of
+            <span class="treaty-one-text">Treaty 1</span>?
+          </h2>
+          <p>
+            Treaties were signed with
+            <span class="important-text">certain entitlements</span> and
+            promises. These entitlements are mainly focused on
+            <span class="important-text">First Nations</span> people who were
+            part of the Treaty and reside on the land in which the Treaty was
+            signed in.
+          </p>
+          <p>
+            The promises that were made in the signing of
+            <span class="treaty-one-text">Treaty 1</span> include each family of
+            five recieving <span class="important-text">160 acres</span> of land
+            &#40;About for 32 acres of land per family member&#41;, a school
+            being maintained on each reserve of
+            <span class="treaty-one-text">Treaty 1</span>, pay
+            <span class="important-text">each family of 5</span> a
+            <span class="important-text">total of 15 dollars per year</span>
+            &#40;3 dollars per family member&#41;, and lay aside and
+            <span class="important-text">reserve land</span> to be
+            <span class="important-text">exclusively used</span> by
+            <span class="important-text">First Nations</span>
+            people on the lots of land they agreed to reserve for them.
+          </p>
+        </div>
+      </section>
+      <!-- This section is for explaining how Treaty 1 connects to today. -->
+      <section>
+        <div class="section-content">
+          <h2>
+            How is <span class="treaty-one-text">Treaty 1</span> being
+            implemented today?
+          </h2>
+          <p>
+            Treaty 1 is not only something from the past. Today, it is still
+            being implemented through Indigenous businesses, urban reserves,
+            housing projects, and economic development in Manitoba.
+          </p>
 
-                <!-- This slider shows different images about how Treaty 1 is still important today.
+          <!--  
+                This slider shows different images about how Treaty 1 is still important today.
                 
                 This is slider is an example of an animation we didn't learn about in class using flexbox.
-                -->
-                <div class="slider">
-                    <div class="image-card">
-                        <img src="images/slide1.jpg" alt="Naawi-Oodena urban development master plan" />
-                        <div class="caption">
-                            <h2>Naawi-Oodena</h2>
-                            <p>Urban development master plan.</p>
-                        </div>
-                    </div>
+          -->
+          <div class="slider">
+            <div class="image-card">
+              <img
+                src="images/slide1.jpg"
+                alt="Naawi-Oodena urban development master plan" />
+              <div class="caption">
+                <h2>Naawi-Oodena</h2>
+                <p>Urban development master plan.</p>
+              </div>
+            </div>
 
-                    <div class="image-card">
-                        <img src="images/slide2.jpg" alt="Former Kapyong Barracks future Naawi-Oodena urban reserve development in Winnipeg" />
-                        <div class="caption">
-                            <h2>Former Kapyong Barracks</h2>
-                            <p>Location of the future Naawi-Oodena urban reserve development in Winnipeg.</p>
-                        </div>
-                    </div>
-
-                    <div class="image-card">
-                        <img src="images/slide3.jpg" alt="Oodena Gas and Convenience Indigenous-owned business" />
-                        <div class="caption">
-                            <h2>Oodena Gas &amp; Convenience</h2>
-                            <p>An Indigenous-owned business supporting economic growth and jobs.</p>
-                        </div>
-                    </div>
-
-                    <div class="image-card">
-                        <img src="images/slide4.jpg" alt="Lower Fort Garry" />
-                        <div class="caption">
-                            <h2>Lower Fort Garry</h2>
-                            <p>An important historic place connected to Treaty 1.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- This topic row has the image on the left and the text on the right. -->
-                <div class="topic-row clearfix">
-                    <!-- This div holds the image for this topic. -->
-                    <div class="topic-image image-left">
-                        <img src="images/Naawi-Oodena Urban Reserve.jpg" alt="Naawi-Oodena Urban Reserve" />
-                    </div>
-                    <!-- This div holds the writing for this topic. -->
-                    <div class="topic-text">
-                        <h3>Naawi-Oodena Urban Reserve</h3>
-                        <p>
-                            Naawi-Oodena means "Centre of the Heart and Community" in Anishinaabemowin. It is owned by
-                            the seven Treaty One First Nations and officially became reserve land in 2022.
-                        </p>
-                        <p>The project shows how Treaty 1 continues today by supporting:</p>
-                        <ul>
-                            <li>Indigenous-owned businesses</li>
-                            <li>New jobs and economic growth</li>
-                            <li>Housing and community spaces</li>
-                            <li>Partnerships with the City of Winnipeg</li>
-                            <li>Future opportunities for First Nations communities</li>
-                        </ul>
-                        <p>
-                            The development plan includes commercial buildings, housing, recreation spaces, and community
-                            services.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- This topic row switches the image to the right to make the page look less repetitive. -->
-                <div class="topic-row clearfix">
-                    <!-- This empty div is where I can add my image later. -->
-                    <div class="topic-image image-right">
-                      <img src="images/Oodena Gas Bar block A.jpg" alt="Oodena Gas Bar block A" />
-                    </div>
-                    <!-- This div holds the writing for this topic. -->
-                    <div class="topic-text">
-                        <h3>Block A Development</h3>
-                        <p>The first phase of the project is called Block A.</p>
-                        <p>
-                            One of the main developments is the Oodena Gas Bar, an Indigenous-owned gas station and
-                            convenience store located near Kenaston Boulevard and Taylor Avenue in Winnipeg.
-                        </p>
-                        <p>
-                            This project helps create jobs, business opportunities, and economic growth for Treaty One
-                            Nations.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- This topic row puts the image back on the left to create a pattern. -->
-                <div class="topic-row clearfix">
-                    <!-- This empty div is where I can add my image later. -->
-                    <div class="topic-image image-left">
-                      <img src="images/urban reserve.jpg" alt="Urban Reserve" />
-                    </div>
-                    <!-- This div holds the writing for this topic. -->
-                    <div class="topic-text">
-                        <h3>Urban Reserves Today</h3>
-                        <p>Another way Treaty 1 is implemented today is through urban reserves.</p>
-                        <p>
-                            An urban reserve is reserve land located inside or near a city. These areas allow First Nations
-                            communities to build businesses and participate in the local economy while keeping Indigenous
-                            ownership and governance.
-                        </p>
-                        <p>Examples include:</p>
-                        <ul>
-                            <li>Naawi-Oodena Urban Reserve</li>
-                            <li>Long Plain First Nation businesses</li>
-                            <li>Indigenous-owned gas stations and commercial projects</li>
-                        </ul>
-                        <p>
-                            These developments help support employment, investment, education, and community growth.
-                        </p>
-                    </div>
-                </div>
-                </div>
-            </section>
-            <!-- This final section gives the conclusion for the page. -->
-            <section>
-              <div class="section-content color-tertiary conclusion">
-                <h3>Conclusion</h3>
+            <div class="image-card">
+              <img
+                src="images/slide2.jpg"
+                alt="Former Kapyong Barracks future Naawi-Oodena urban reserve development in Winnipeg" />
+              <div class="caption">
+                <h2>Former Kapyong Barracks</h2>
                 <p>
-                     In conclusion, we have looked at what Indigenous Nations, communties, and people were involved in
-                    <span class="treaty-one-text">Treaty 1</span> and now you know who they are and what Nations they
-                    are from. You can check out
+                  Location of the future Naawi-Oodena urban reserve development
+                  in Winnipeg.
                 </p>
               </div>
-            </section>
-            
-        </main>
-        <!-- The footer is the bottom area of the page. -->
-        <footer>
-            <div class="footer-column">
-                <h3>Social Media</h3>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
-                <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
             </div>
-            <div class="footer-column">
-                <h3>Links</h3>
-                <a href="#" id="back-to-top" aria-label="Link to go back to the top of the website">Back to top</a>
-                <a href="index.html">What is Treaty 1</a>
-                <a href="people.html">Indigenous People Involved</a>
-                <a href="promises.html">Promises and Implementations</a>
+
+            <div class="image-card">
+              <img
+                src="images/slide3.jpg"
+                alt="Oodena Gas and Convenience Indigenous-owned business" />
+              <div class="caption">
+                <h2>Oodena Gas &amp; Convenience</h2>
+                <p>
+                  An Indigenous-owned business supporting economic growth and
+                  jobs.
+                </p>
+              </div>
             </div>
-            <div class="footer-column">
-                <h3>Contact</h3>
-                <a href="mailto:info@treaty1education.ca">info@treaty1education.ca</a>
-                <a href="tel:+12045550101">204-555-0101</a>
-                <p>Created as a school educational project.</p>
+
+            <div class="image-card">
+              <img src="images/slide4.jpg" alt="Lower Fort Garry" />
+              <div class="caption">
+                <h2>Lower Fort Garry</h2>
+                <p>An important historic place connected to Treaty 1.</p>
+              </div>
             </div>
-            <div class="footer-bottom">
-                <p>Treaty 1 reminds us of the importance of truth, respect, and reconciliation.</p>
-                <p>Sources: Treaty Relations Commission of Manitoba, Government of Canada.</p>
-                <p>&copy; 2026 Treaty 1 Educational Website</p>
+          </div>
+
+          <!-- This topic row has the image on the left and the text on the right. -->
+          <div class="topic-row clearfix">
+            <!-- This div holds the image for this topic. -->
+            <div class="topic-image image-left">
+              <img
+                src="images/Naawi-Oodena Urban Reserve.jpg"
+                alt="Naawi-Oodena Urban Reserve" />
             </div>
-        </footer>
-    </body>
+            <!-- This div holds the writing for this topic. -->
+            <div class="topic-text">
+              <h3>Naawi-Oodena Urban Reserve</h3>
+              <p>
+                Naawi-Oodena means "Centre of the Heart and Community" in
+                Anishinaabemowin. It is owned by the seven Treaty One First
+                Nations and officially became reserve land in 2022.
+              </p>
+              <p>
+                The project shows how Treaty 1 continues today by supporting:
+              </p>
+              <ul>
+                <li>Indigenous-owned businesses</li>
+                <li>New jobs and economic growth</li>
+                <li>Housing and community spaces</li>
+                <li>Partnerships with the City of Winnipeg</li>
+                <li>Future opportunities for First Nations communities</li>
+              </ul>
+              <p>
+                The development plan includes commercial buildings, housing,
+                recreation spaces, and community services.
+              </p>
+            </div>
+          </div>
+
+          <!-- This topic row switches the image to the right to make the page look less repetitive. -->
+          <div class="topic-row clearfix">
+            <!-- This empty div is where I can add my image later. -->
+            <div class="topic-image image-right">
+              <img
+                src="images/Oodena Gas Bar block A.jpg"
+                alt="Oodena Gas Bar block A" />
+            </div>
+            <!-- This div holds the writing for this topic. -->
+            <div class="topic-text">
+              <h3>Block A Development</h3>
+              <p>The first phase of the project is called Block A.</p>
+              <p>
+                One of the main developments is the Oodena Gas Bar, an
+                Indigenous-owned gas station and convenience store located near
+                Kenaston Boulevard and Taylor Avenue in Winnipeg.
+              </p>
+              <p>
+                This project helps create jobs, business opportunities, and
+                economic growth for Treaty One Nations.
+              </p>
+            </div>
+          </div>
+
+          <!-- This topic row puts the image back on the left to create a pattern. -->
+          <div class="topic-row clearfix">
+            <!-- This empty div is where I can add my image later. -->
+            <div class="topic-image image-left">
+              <img src="images/urban reserve.jpg" alt="Urban Reserve" />
+            </div>
+            <!-- This div holds the writing for this topic. -->
+            <div class="topic-text">
+              <h3>Urban Reserves Today</h3>
+              <p>
+                Another way Treaty 1 is implemented today is through urban
+                reserves.
+              </p>
+              <p>
+                An urban reserve is reserve land located inside or near a city.
+                These areas allow First Nations communities to build businesses
+                and participate in the local economy while keeping Indigenous
+                ownership and governance.
+              </p>
+              <p>Examples include:</p>
+              <ul>
+                <li>Naawi-Oodena Urban Reserve</li>
+                <li>Long Plain First Nation businesses</li>
+                <li>Indigenous-owned gas stations and commercial projects</li>
+              </ul>
+              <p>
+                These developments help support employment, investment,
+                education, and community growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- This final section gives the conclusion for the page. -->
+      <section>
+        <div class="section-content color-tertiary conclusion">
+          <h3>Conclusion</h3>
+          <p>
+            In conclusion, we have looked at what Indigenous Nations,
+            communties, and people were involved in
+            <span class="treaty-one-text">Treaty 1</span> and now you know who
+            they are and what Nations they are from. You can check out
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- The footer is the bottom area of the page with extra links. -->
+    <footer>
+      <div class="footer-column">
+        <h3>Social Media</h3>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+          >Instagram</a
+        >
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+          >Facebook</a
+        >
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+          >YouTube</a
+        >
+      </div>
+      <div class="footer-column">
+        <h3>Links</h3>
+        <a
+          href="#"
+          id="back-to-top"
+          aria-label="Link to go back to the top of the website"
+          >Back to top</a
+        >
+        <a href="index.html">What is Treaty 1</a>
+        <a href="people.html">Indigenous People Involved</a>
+        <a href="promises.html">Promises and Implementations</a>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <a href="mailto:info@treaty1education.ca">info@treaty1education.ca</a>
+        <a href="tel:+12045550101">204-555-0101</a>
+        <p>Created as a school educational project.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          Treaty 1 reminds us of the importance of truth, respect, and
+          reconciliation.
+        </p>
+        <p>
+          Sources: Treaty Relations Commission of Manitoba, Government of
+          Canada.
+        </p>
+        <p>&copy; 2026 Treaty 1 Educational Website</p>
+      </div>
+    </footer>
+  </body>
 </html>
