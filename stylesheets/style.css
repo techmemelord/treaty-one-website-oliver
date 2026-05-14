@@ -124,7 +124,8 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:focus {
   background-color: #dadada;
 }
 a:active {
@@ -247,7 +248,6 @@ section {
 }
 
 .color-tertiary {
-  /* background-color: #c96f2c; */
   background-color: #2e1a0a;
 }
 
