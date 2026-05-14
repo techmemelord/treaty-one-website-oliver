@@ -934,7 +934,7 @@ figure {
 footer {
   background-color: #2e1a0a;
   /* This adds space of 32px around the content in the footer. */
-  padding: 32px;
+  padding: 32px 0px;
   /* makes the max width of the footer 90% of the width relative to its parent element */
   max-width: 90%;
   margin: auto;
